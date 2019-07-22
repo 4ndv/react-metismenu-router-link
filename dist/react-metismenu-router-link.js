@@ -72,9 +72,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _reactRouterDom = __webpack_require__(12);
 
-	var _reactRouter = __webpack_require__(50);
+	var _reactRouter = __webpack_require__(61);
 
-	var _classnames = __webpack_require__(51);
+	var _classnames = __webpack_require__(85);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -1345,31 +1345,31 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _BrowserRouter3 = _interopRequireDefault(_BrowserRouter2);
 
-	var _HashRouter2 = __webpack_require__(25);
+	var _HashRouter2 = __webpack_require__(35);
 
 	var _HashRouter3 = _interopRequireDefault(_HashRouter2);
 
-	var _Link2 = __webpack_require__(27);
+	var _Link2 = __webpack_require__(37);
 
 	var _Link3 = _interopRequireDefault(_Link2);
 
-	var _MemoryRouter2 = __webpack_require__(28);
+	var _MemoryRouter2 = __webpack_require__(38);
 
 	var _MemoryRouter3 = _interopRequireDefault(_MemoryRouter2);
 
-	var _NavLink2 = __webpack_require__(31);
+	var _NavLink2 = __webpack_require__(42);
 
 	var _NavLink3 = _interopRequireDefault(_NavLink2);
 
-	var _Prompt2 = __webpack_require__(37);
+	var _Prompt2 = __webpack_require__(48);
 
 	var _Prompt3 = _interopRequireDefault(_Prompt2);
 
-	var _Redirect2 = __webpack_require__(39);
+	var _Redirect2 = __webpack_require__(50);
 
 	var _Redirect3 = _interopRequireDefault(_Redirect2);
 
-	var _Route2 = __webpack_require__(32);
+	var _Route2 = __webpack_require__(43);
 
 	var _Route3 = _interopRequireDefault(_Route2);
 
@@ -1377,19 +1377,19 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _Router3 = _interopRequireDefault(_Router2);
 
-	var _StaticRouter2 = __webpack_require__(42);
+	var _StaticRouter2 = __webpack_require__(53);
 
 	var _StaticRouter3 = _interopRequireDefault(_StaticRouter2);
 
-	var _Switch2 = __webpack_require__(44);
+	var _Switch2 = __webpack_require__(55);
 
 	var _Switch3 = _interopRequireDefault(_Switch2);
 
-	var _matchPath2 = __webpack_require__(46);
+	var _matchPath2 = __webpack_require__(57);
 
 	var _matchPath3 = _interopRequireDefault(_matchPath2);
 
-	var _withRouter2 = __webpack_require__(47);
+	var _withRouter2 = __webpack_require__(58);
 
 	var _withRouter3 = _interopRequireDefault(_withRouter2);
 
@@ -2404,7 +2404,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -2420,11 +2420,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }return target;
 	};
 
-	var _warning = __webpack_require__(14);
+	var _warning = __webpack_require__(25);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
-	var _invariant = __webpack_require__(16);
+	var _invariant = __webpack_require__(26);
 
 	var _invariant2 = _interopRequireDefault(_invariant);
 
@@ -2432,7 +2432,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _propTypes = __webpack_require__(2);
+	var _propTypes = __webpack_require__(27);
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -2449,12 +2449,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _possibleConstructorReturn(self, call) {
 	  if (!self) {
 	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-	  }return call && ((typeof call === 'undefined' ? 'undefined' : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
 	}
 
 	function _inherits(subClass, superClass) {
 	  if (typeof superClass !== "function" && superClass !== null) {
-	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === 'undefined' ? 'undefined' : _typeof(superClass)));
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
 	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 	}
 
@@ -2492,10 +2492,10 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  Router.prototype.computeMatch = function computeMatch(pathname) {
 	    return {
-	      path: '/',
-	      url: '/',
+	      path: "/",
+	      url: "/",
 	      params: {},
-	      isExact: pathname === '/'
+	      isExact: pathname === "/"
 	    };
 	  };
 
@@ -2506,7 +2506,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        children = _props.children,
 	        history = _props.history;
 
-	    (0, _invariant2.default)(children == null || _react2.default.Children.count(children) === 1, 'A <Router> may have only one child element');
+	    (0, _invariant2.default)(children == null || _react2.default.Children.count(children) === 1, "A <Router> may have only one child element");
 
 	    // Do this here so we can setState when a <Redirect> changes the
 	    // location in componentWillMount. This happens e.g. when doing
@@ -2519,7 +2519,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  };
 
 	  Router.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
-	    (0, _warning2.default)(this.props.history === nextProps.history, 'You cannot change <Router history>');
+	    (0, _warning2.default)(this.props.history === nextProps.history, "You cannot change <Router history>");
 	  };
 
 	  Router.prototype.componentWillUnmount = function componentWillUnmount() {
@@ -2551,6 +2551,1226 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright (c) 2014-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	'use strict';
+
+	/**
+	 * Similar to invariant but only logs a warning if the condition is not met.
+	 * This can be used to log issues in development environments in critical
+	 * paths. Removing the logging code for production environments will keep the
+	 * same logic and follow the same code paths.
+	 */
+
+	var __DEV__ = process.env.NODE_ENV !== 'production';
+
+	var warning = function warning() {};
+
+	if (__DEV__) {
+	  var printWarning = function printWarning(format, args) {
+	    var len = arguments.length;
+	    args = new Array(len > 1 ? len - 1 : 0);
+	    for (var key = 1; key < len; key++) {
+	      args[key - 1] = arguments[key];
+	    }
+	    var argIndex = 0;
+	    var message = 'Warning: ' + format.replace(/%s/g, function () {
+	      return args[argIndex++];
+	    });
+	    if (typeof console !== 'undefined') {
+	      console.error(message);
+	    }
+	    try {
+	      // --- Welcome to debugging React ---
+	      // This error was thrown as a convenience so that you can use this stack
+	      // to find the callsite that caused this warning to fire.
+	      throw new Error(message);
+	    } catch (x) {}
+	  };
+
+	  warning = function warning(condition, format, args) {
+	    var len = arguments.length;
+	    args = new Array(len > 2 ? len - 2 : 0);
+	    for (var key = 2; key < len; key++) {
+	      args[key - 2] = arguments[key];
+	    }
+	    if (format === undefined) {
+	      throw new Error('`warning(condition, format, ...args)` requires a warning ' + 'message argument');
+	    }
+	    if (!condition) {
+	      printWarning.apply(null, [format].concat(args));
+	    }
+	  };
+	}
+
+	module.exports = warning;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	'use strict';
+
+	/**
+	 * Use invariant() to assert state which your program assumes to be true.
+	 *
+	 * Provide sprintf-style format (only %s is supported) and arguments
+	 * to provide information about what broke and what you were
+	 * expecting.
+	 *
+	 * The invariant message will be stripped in production, but the invariant
+	 * will remain to ensure logic does not differ in production.
+	 */
+
+	var invariant = function invariant(condition, format, a, b, c, d, e, f) {
+	  if (process.env.NODE_ENV !== 'production') {
+	    if (format === undefined) {
+	      throw new Error('invariant requires an error message argument');
+	    }
+	  }
+
+	  if (!condition) {
+	    var error;
+	    if (format === undefined) {
+	      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
+	    } else {
+	      var args = [a, b, c, d, e, f];
+	      var argIndex = 0;
+	      error = new Error(format.replace(/%s/g, function () {
+	        return args[argIndex++];
+	      }));
+	      error.name = 'Invariant Violation';
+	    }
+
+	    error.framesToPop = 1; // we don't care about invariant's own frame
+	    throw error;
+	  }
+	};
+
+	module.exports = invariant;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	if (process.env.NODE_ENV !== 'production') {
+	  var ReactIs = __webpack_require__(28);
+
+	  // By explicitly using `prop-types` you are opting into new development behavior.
+	  // http://fb.me/prop-types-in-prod
+	  var throwOnDirectAccess = true;
+	  module.exports = __webpack_require__(31)(ReactIs.isElement, throwOnDirectAccess);
+	} else {
+	  // By explicitly using `prop-types` you are opting into new production behavior.
+	  // http://fb.me/prop-types-in-prod
+	  module.exports = __webpack_require__(34)();
+	}
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+
+	if (process.env.NODE_ENV === 'production') {
+	  module.exports = __webpack_require__(29);
+	} else {
+	  module.exports = __webpack_require__(30);
+	}
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports) {
+
+	/** @license React v16.8.6
+	 * react-is.production.min.js
+	 *
+	 * Copyright (c) Facebook, Inc. and its affiliates.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	'use strict';
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	Object.defineProperty(exports, "__esModule", { value: !0 });
+	var b = "function" === typeof Symbol && Symbol.for,
+	    c = b ? Symbol.for("react.element") : 60103,
+	    d = b ? Symbol.for("react.portal") : 60106,
+	    e = b ? Symbol.for("react.fragment") : 60107,
+	    f = b ? Symbol.for("react.strict_mode") : 60108,
+	    g = b ? Symbol.for("react.profiler") : 60114,
+	    h = b ? Symbol.for("react.provider") : 60109,
+	    k = b ? Symbol.for("react.context") : 60110,
+	    l = b ? Symbol.for("react.async_mode") : 60111,
+	    m = b ? Symbol.for("react.concurrent_mode") : 60111,
+	    n = b ? Symbol.for("react.forward_ref") : 60112,
+	    p = b ? Symbol.for("react.suspense") : 60113,
+	    q = b ? Symbol.for("react.memo") : 60115,
+	    r = b ? Symbol.for("react.lazy") : 60116;function t(a) {
+	  if ("object" === (typeof a === "undefined" ? "undefined" : _typeof(a)) && null !== a) {
+	    var u = a.$$typeof;switch (u) {case c:
+	        switch (a = a.type, a) {case l:case m:case e:case g:case f:case p:
+	            return a;default:
+	            switch (a = a && a.$$typeof, a) {case k:case n:case h:
+	                return a;default:
+	                return u;}}case r:case q:case d:
+	        return u;}
+	  }
+	}function v(a) {
+	  return t(a) === m;
+	}exports.typeOf = t;exports.AsyncMode = l;exports.ConcurrentMode = m;exports.ContextConsumer = k;exports.ContextProvider = h;exports.Element = c;exports.ForwardRef = n;
+	exports.Fragment = e;exports.Lazy = r;exports.Memo = q;exports.Portal = d;exports.Profiler = g;exports.StrictMode = f;exports.Suspense = p;exports.isValidElementType = function (a) {
+	  return "string" === typeof a || "function" === typeof a || a === e || a === m || a === g || a === f || a === p || "object" === (typeof a === "undefined" ? "undefined" : _typeof(a)) && null !== a && (a.$$typeof === r || a.$$typeof === q || a.$$typeof === h || a.$$typeof === k || a.$$typeof === n);
+	};exports.isAsyncMode = function (a) {
+	  return v(a) || t(a) === l;
+	};exports.isConcurrentMode = v;exports.isContextConsumer = function (a) {
+	  return t(a) === k;
+	};
+	exports.isContextProvider = function (a) {
+	  return t(a) === h;
+	};exports.isElement = function (a) {
+	  return "object" === (typeof a === "undefined" ? "undefined" : _typeof(a)) && null !== a && a.$$typeof === c;
+	};exports.isForwardRef = function (a) {
+	  return t(a) === n;
+	};exports.isFragment = function (a) {
+	  return t(a) === e;
+	};exports.isLazy = function (a) {
+	  return t(a) === r;
+	};exports.isMemo = function (a) {
+	  return t(a) === q;
+	};exports.isPortal = function (a) {
+	  return t(a) === d;
+	};exports.isProfiler = function (a) {
+	  return t(a) === g;
+	};exports.isStrictMode = function (a) {
+	  return t(a) === f;
+	};
+	exports.isSuspense = function (a) {
+	  return t(a) === p;
+	};
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/** @license React v16.8.6
+	 * react-is.development.js
+	 *
+	 * Copyright (c) Facebook, Inc. and its affiliates.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	'use strict';
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	if (process.env.NODE_ENV !== "production") {
+	  (function () {
+	    'use strict';
+
+	    Object.defineProperty(exports, '__esModule', { value: true });
+
+	    // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+	    // nor polyfill, then a plain number is used for performance.
+	    var hasSymbol = typeof Symbol === 'function' && Symbol.for;
+
+	    var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
+	    var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
+	    var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
+	    var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
+	    var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
+	    var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
+	    var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace;
+	    var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
+	    var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
+	    var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
+	    var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
+	    var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
+	    var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
+
+	    function isValidElementType(type) {
+	      return typeof type === 'string' || typeof type === 'function' ||
+	      // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+	      type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || (typeof type === 'undefined' ? 'undefined' : _typeof(type)) === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE);
+	    }
+
+	    /**
+	     * Forked from fbjs/warning:
+	     * https://github.com/facebook/fbjs/blob/e66ba20ad5be433eb54423f2b097d829324d9de6/packages/fbjs/src/__forks__/warning.js
+	     *
+	     * Only change is we use console.warn instead of console.error,
+	     * and do nothing when 'console' is not supported.
+	     * This really simplifies the code.
+	     * ---
+	     * Similar to invariant but only logs a warning if the condition is not met.
+	     * This can be used to log issues in development environments in critical
+	     * paths. Removing the logging code for production environments will keep the
+	     * same logic and follow the same code paths.
+	     */
+
+	    var lowPriorityWarning = function lowPriorityWarning() {};
+
+	    {
+	      var printWarning = function printWarning(format) {
+	        for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+	          args[_key - 1] = arguments[_key];
+	        }
+
+	        var argIndex = 0;
+	        var message = 'Warning: ' + format.replace(/%s/g, function () {
+	          return args[argIndex++];
+	        });
+	        if (typeof console !== 'undefined') {
+	          console.warn(message);
+	        }
+	        try {
+	          // --- Welcome to debugging React ---
+	          // This error was thrown as a convenience so that you can use this stack
+	          // to find the callsite that caused this warning to fire.
+	          throw new Error(message);
+	        } catch (x) {}
+	      };
+
+	      lowPriorityWarning = function lowPriorityWarning(condition, format) {
+	        if (format === undefined) {
+	          throw new Error('`lowPriorityWarning(condition, format, ...args)` requires a warning ' + 'message argument');
+	        }
+	        if (!condition) {
+	          for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
+	            args[_key2 - 2] = arguments[_key2];
+	          }
+
+	          printWarning.apply(undefined, [format].concat(args));
+	        }
+	      };
+	    }
+
+	    var lowPriorityWarning$1 = lowPriorityWarning;
+
+	    function typeOf(object) {
+	      if ((typeof object === 'undefined' ? 'undefined' : _typeof(object)) === 'object' && object !== null) {
+	        var $$typeof = object.$$typeof;
+	        switch ($$typeof) {
+	          case REACT_ELEMENT_TYPE:
+	            var type = object.type;
+
+	            switch (type) {
+	              case REACT_ASYNC_MODE_TYPE:
+	              case REACT_CONCURRENT_MODE_TYPE:
+	              case REACT_FRAGMENT_TYPE:
+	              case REACT_PROFILER_TYPE:
+	              case REACT_STRICT_MODE_TYPE:
+	              case REACT_SUSPENSE_TYPE:
+	                return type;
+	              default:
+	                var $$typeofType = type && type.$$typeof;
+
+	                switch ($$typeofType) {
+	                  case REACT_CONTEXT_TYPE:
+	                  case REACT_FORWARD_REF_TYPE:
+	                  case REACT_PROVIDER_TYPE:
+	                    return $$typeofType;
+	                  default:
+	                    return $$typeof;
+	                }
+	            }
+	          case REACT_LAZY_TYPE:
+	          case REACT_MEMO_TYPE:
+	          case REACT_PORTAL_TYPE:
+	            return $$typeof;
+	        }
+	      }
+
+	      return undefined;
+	    }
+
+	    // AsyncMode is deprecated along with isAsyncMode
+	    var AsyncMode = REACT_ASYNC_MODE_TYPE;
+	    var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+	    var ContextConsumer = REACT_CONTEXT_TYPE;
+	    var ContextProvider = REACT_PROVIDER_TYPE;
+	    var Element = REACT_ELEMENT_TYPE;
+	    var ForwardRef = REACT_FORWARD_REF_TYPE;
+	    var Fragment = REACT_FRAGMENT_TYPE;
+	    var Lazy = REACT_LAZY_TYPE;
+	    var Memo = REACT_MEMO_TYPE;
+	    var Portal = REACT_PORTAL_TYPE;
+	    var Profiler = REACT_PROFILER_TYPE;
+	    var StrictMode = REACT_STRICT_MODE_TYPE;
+	    var Suspense = REACT_SUSPENSE_TYPE;
+
+	    var hasWarnedAboutDeprecatedIsAsyncMode = false;
+
+	    // AsyncMode should be deprecated
+	    function isAsyncMode(object) {
+	      {
+	        if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+	          hasWarnedAboutDeprecatedIsAsyncMode = true;
+	          lowPriorityWarning$1(false, 'The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
+	        }
+	      }
+	      return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+	    }
+	    function isConcurrentMode(object) {
+	      return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+	    }
+	    function isContextConsumer(object) {
+	      return typeOf(object) === REACT_CONTEXT_TYPE;
+	    }
+	    function isContextProvider(object) {
+	      return typeOf(object) === REACT_PROVIDER_TYPE;
+	    }
+	    function isElement(object) {
+	      return (typeof object === 'undefined' ? 'undefined' : _typeof(object)) === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+	    }
+	    function isForwardRef(object) {
+	      return typeOf(object) === REACT_FORWARD_REF_TYPE;
+	    }
+	    function isFragment(object) {
+	      return typeOf(object) === REACT_FRAGMENT_TYPE;
+	    }
+	    function isLazy(object) {
+	      return typeOf(object) === REACT_LAZY_TYPE;
+	    }
+	    function isMemo(object) {
+	      return typeOf(object) === REACT_MEMO_TYPE;
+	    }
+	    function isPortal(object) {
+	      return typeOf(object) === REACT_PORTAL_TYPE;
+	    }
+	    function isProfiler(object) {
+	      return typeOf(object) === REACT_PROFILER_TYPE;
+	    }
+	    function isStrictMode(object) {
+	      return typeOf(object) === REACT_STRICT_MODE_TYPE;
+	    }
+	    function isSuspense(object) {
+	      return typeOf(object) === REACT_SUSPENSE_TYPE;
+	    }
+
+	    exports.typeOf = typeOf;
+	    exports.AsyncMode = AsyncMode;
+	    exports.ConcurrentMode = ConcurrentMode;
+	    exports.ContextConsumer = ContextConsumer;
+	    exports.ContextProvider = ContextProvider;
+	    exports.Element = Element;
+	    exports.ForwardRef = ForwardRef;
+	    exports.Fragment = Fragment;
+	    exports.Lazy = Lazy;
+	    exports.Memo = Memo;
+	    exports.Portal = Portal;
+	    exports.Profiler = Profiler;
+	    exports.StrictMode = StrictMode;
+	    exports.Suspense = Suspense;
+	    exports.isValidElementType = isValidElementType;
+	    exports.isAsyncMode = isAsyncMode;
+	    exports.isConcurrentMode = isConcurrentMode;
+	    exports.isContextConsumer = isContextConsumer;
+	    exports.isContextProvider = isContextProvider;
+	    exports.isElement = isElement;
+	    exports.isForwardRef = isForwardRef;
+	    exports.isFragment = isFragment;
+	    exports.isLazy = isLazy;
+	    exports.isMemo = isMemo;
+	    exports.isPortal = isPortal;
+	    exports.isProfiler = isProfiler;
+	    exports.isStrictMode = isStrictMode;
+	    exports.isSuspense = isSuspense;
+	  })();
+	}
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	'use strict';
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	var ReactIs = __webpack_require__(28);
+	var assign = __webpack_require__(8);
+
+	var ReactPropTypesSecret = __webpack_require__(32);
+	var checkPropTypes = __webpack_require__(33);
+
+	var has = Function.call.bind(Object.prototype.hasOwnProperty);
+	var printWarning = function printWarning() {};
+
+	if (process.env.NODE_ENV !== 'production') {
+	  printWarning = function printWarning(text) {
+	    var message = 'Warning: ' + text;
+	    if (typeof console !== 'undefined') {
+	      console.error(message);
+	    }
+	    try {
+	      // --- Welcome to debugging React ---
+	      // This error was thrown as a convenience so that you can use this stack
+	      // to find the callsite that caused this warning to fire.
+	      throw new Error(message);
+	    } catch (x) {}
+	  };
+	}
+
+	function emptyFunctionThatReturnsNull() {
+	  return null;
+	}
+
+	module.exports = function (isValidElement, throwOnDirectAccess) {
+	  /* global Symbol */
+	  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
+	  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
+
+	  /**
+	   * Returns the iterator method function contained on the iterable object.
+	   *
+	   * Be sure to invoke the function with the iterable as context:
+	   *
+	   *     var iteratorFn = getIteratorFn(myIterable);
+	   *     if (iteratorFn) {
+	   *       var iterator = iteratorFn.call(myIterable);
+	   *       ...
+	   *     }
+	   *
+	   * @param {?object} maybeIterable
+	   * @return {?function}
+	   */
+	  function getIteratorFn(maybeIterable) {
+	    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+	    if (typeof iteratorFn === 'function') {
+	      return iteratorFn;
+	    }
+	  }
+
+	  /**
+	   * Collection of methods that allow declaration and validation of props that are
+	   * supplied to React components. Example usage:
+	   *
+	   *   var Props = require('ReactPropTypes');
+	   *   var MyArticle = React.createClass({
+	   *     propTypes: {
+	   *       // An optional string prop named "description".
+	   *       description: Props.string,
+	   *
+	   *       // A required enum prop named "category".
+	   *       category: Props.oneOf(['News','Photos']).isRequired,
+	   *
+	   *       // A prop named "dialog" that requires an instance of Dialog.
+	   *       dialog: Props.instanceOf(Dialog).isRequired
+	   *     },
+	   *     render: function() { ... }
+	   *   });
+	   *
+	   * A more formal specification of how these methods are used:
+	   *
+	   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
+	   *   decl := ReactPropTypes.{type}(.isRequired)?
+	   *
+	   * Each and every declaration produces a function with the same signature. This
+	   * allows the creation of custom validation functions. For example:
+	   *
+	   *  var MyLink = React.createClass({
+	   *    propTypes: {
+	   *      // An optional string or URI prop named "href".
+	   *      href: function(props, propName, componentName) {
+	   *        var propValue = props[propName];
+	   *        if (propValue != null && typeof propValue !== 'string' &&
+	   *            !(propValue instanceof URI)) {
+	   *          return new Error(
+	   *            'Expected a string or an URI for ' + propName + ' in ' +
+	   *            componentName
+	   *          );
+	   *        }
+	   *      }
+	   *    },
+	   *    render: function() {...}
+	   *  });
+	   *
+	   * @internal
+	   */
+
+	  var ANONYMOUS = '<<anonymous>>';
+
+	  // Important!
+	  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
+	  var ReactPropTypes = {
+	    array: createPrimitiveTypeChecker('array'),
+	    bool: createPrimitiveTypeChecker('boolean'),
+	    func: createPrimitiveTypeChecker('function'),
+	    number: createPrimitiveTypeChecker('number'),
+	    object: createPrimitiveTypeChecker('object'),
+	    string: createPrimitiveTypeChecker('string'),
+	    symbol: createPrimitiveTypeChecker('symbol'),
+
+	    any: createAnyTypeChecker(),
+	    arrayOf: createArrayOfTypeChecker,
+	    element: createElementTypeChecker(),
+	    elementType: createElementTypeTypeChecker(),
+	    instanceOf: createInstanceTypeChecker,
+	    node: createNodeChecker(),
+	    objectOf: createObjectOfTypeChecker,
+	    oneOf: createEnumTypeChecker,
+	    oneOfType: createUnionTypeChecker,
+	    shape: createShapeTypeChecker,
+	    exact: createStrictShapeTypeChecker
+	  };
+
+	  /**
+	   * inlined Object.is polyfill to avoid requiring consumers ship their own
+	   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+	   */
+	  /*eslint-disable no-self-compare*/
+	  function is(x, y) {
+	    // SameValue algorithm
+	    if (x === y) {
+	      // Steps 1-5, 7-10
+	      // Steps 6.b-6.e: +0 != -0
+	      return x !== 0 || 1 / x === 1 / y;
+	    } else {
+	      // Step 6.a: NaN == NaN
+	      return x !== x && y !== y;
+	    }
+	  }
+	  /*eslint-enable no-self-compare*/
+
+	  /**
+	   * We use an Error-like object for backward compatibility as people may call
+	   * PropTypes directly and inspect their output. However, we don't use real
+	   * Errors anymore. We don't inspect their stack anyway, and creating them
+	   * is prohibitively expensive if they are created too often, such as what
+	   * happens in oneOfType() for any type before the one that matched.
+	   */
+	  function PropTypeError(message) {
+	    this.message = message;
+	    this.stack = '';
+	  }
+	  // Make `instanceof Error` still work for returned errors.
+	  PropTypeError.prototype = Error.prototype;
+
+	  function createChainableTypeChecker(validate) {
+	    if (process.env.NODE_ENV !== 'production') {
+	      var manualPropTypeCallCache = {};
+	      var manualPropTypeWarningCount = 0;
+	    }
+	    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+	      componentName = componentName || ANONYMOUS;
+	      propFullName = propFullName || propName;
+
+	      if (secret !== ReactPropTypesSecret) {
+	        if (throwOnDirectAccess) {
+	          // New behavior only for users of `prop-types` package
+	          var err = new Error('Calling PropTypes validators directly is not supported by the `prop-types` package. ' + 'Use `PropTypes.checkPropTypes()` to call them. ' + 'Read more at http://fb.me/use-check-prop-types');
+	          err.name = 'Invariant Violation';
+	          throw err;
+	        } else if (process.env.NODE_ENV !== 'production' && typeof console !== 'undefined') {
+	          // Old behavior for people using React.PropTypes
+	          var cacheKey = componentName + ':' + propName;
+	          if (!manualPropTypeCallCache[cacheKey] &&
+	          // Avoid spamming the console because they are often not actionable except for lib authors
+	          manualPropTypeWarningCount < 3) {
+	            printWarning('You are manually calling a React.PropTypes validation ' + 'function for the `' + propFullName + '` prop on `' + componentName + '`. This is deprecated ' + 'and will throw in the standalone `prop-types` package. ' + 'You may be seeing this warning due to a third-party PropTypes ' + 'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.');
+	            manualPropTypeCallCache[cacheKey] = true;
+	            manualPropTypeWarningCount++;
+	          }
+	        }
+	      }
+	      if (props[propName] == null) {
+	        if (isRequired) {
+	          if (props[propName] === null) {
+	            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
+	          }
+	          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
+	        }
+	        return null;
+	      } else {
+	        return validate(props, propName, componentName, location, propFullName);
+	      }
+	    }
+
+	    var chainedCheckType = checkType.bind(null, false);
+	    chainedCheckType.isRequired = checkType.bind(null, true);
+
+	    return chainedCheckType;
+	  }
+
+	  function createPrimitiveTypeChecker(expectedType) {
+	    function validate(props, propName, componentName, location, propFullName, secret) {
+	      var propValue = props[propName];
+	      var propType = getPropType(propValue);
+	      if (propType !== expectedType) {
+	        // `propValue` being instance of, say, date/regexp, pass the 'object'
+	        // check, but we can offer a more precise error message here rather than
+	        // 'of type `object`'.
+	        var preciseType = getPreciseType(propValue);
+
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createAnyTypeChecker() {
+	    return createChainableTypeChecker(emptyFunctionThatReturnsNull);
+	  }
+
+	  function createArrayOfTypeChecker(typeChecker) {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      if (typeof typeChecker !== 'function') {
+	        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
+	      }
+	      var propValue = props[propName];
+	      if (!Array.isArray(propValue)) {
+	        var propType = getPropType(propValue);
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
+	      }
+	      for (var i = 0; i < propValue.length; i++) {
+	        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
+	        if (error instanceof Error) {
+	          return error;
+	        }
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createElementTypeChecker() {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      var propValue = props[propName];
+	      if (!isValidElement(propValue)) {
+	        var propType = getPropType(propValue);
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createElementTypeTypeChecker() {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      var propValue = props[propName];
+	      if (!ReactIs.isValidElementType(propValue)) {
+	        var propType = getPropType(propValue);
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement type.'));
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createInstanceTypeChecker(expectedClass) {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      if (!(props[propName] instanceof expectedClass)) {
+	        var expectedClassName = expectedClass.name || ANONYMOUS;
+	        var actualClassName = getClassName(props[propName]);
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createEnumTypeChecker(expectedValues) {
+	    if (!Array.isArray(expectedValues)) {
+	      if (process.env.NODE_ENV !== 'production') {
+	        if (arguments.length > 1) {
+	          printWarning('Invalid arguments supplied to oneOf, expected an array, got ' + arguments.length + ' arguments. ' + 'A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z]).');
+	        } else {
+	          printWarning('Invalid argument supplied to oneOf, expected an array.');
+	        }
+	      }
+	      return emptyFunctionThatReturnsNull;
+	    }
+
+	    function validate(props, propName, componentName, location, propFullName) {
+	      var propValue = props[propName];
+	      for (var i = 0; i < expectedValues.length; i++) {
+	        if (is(propValue, expectedValues[i])) {
+	          return null;
+	        }
+	      }
+
+	      var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
+	        var type = getPreciseType(value);
+	        if (type === 'symbol') {
+	          return String(value);
+	        }
+	        return value;
+	      });
+	      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + String(propValue) + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createObjectOfTypeChecker(typeChecker) {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      if (typeof typeChecker !== 'function') {
+	        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
+	      }
+	      var propValue = props[propName];
+	      var propType = getPropType(propValue);
+	      if (propType !== 'object') {
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
+	      }
+	      for (var key in propValue) {
+	        if (has(propValue, key)) {
+	          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+	          if (error instanceof Error) {
+	            return error;
+	          }
+	        }
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createUnionTypeChecker(arrayOfTypeCheckers) {
+	    if (!Array.isArray(arrayOfTypeCheckers)) {
+	      process.env.NODE_ENV !== 'production' ? printWarning('Invalid argument supplied to oneOfType, expected an instance of array.') : void 0;
+	      return emptyFunctionThatReturnsNull;
+	    }
+
+	    for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+	      var checker = arrayOfTypeCheckers[i];
+	      if (typeof checker !== 'function') {
+	        printWarning('Invalid argument supplied to oneOfType. Expected an array of check functions, but ' + 'received ' + getPostfixForTypeWarning(checker) + ' at index ' + i + '.');
+	        return emptyFunctionThatReturnsNull;
+	      }
+	    }
+
+	    function validate(props, propName, componentName, location, propFullName) {
+	      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+	        var checker = arrayOfTypeCheckers[i];
+	        if (checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret) == null) {
+	          return null;
+	        }
+	      }
+
+	      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createNodeChecker() {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      if (!isNode(props[propName])) {
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createShapeTypeChecker(shapeTypes) {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      var propValue = props[propName];
+	      var propType = getPropType(propValue);
+	      if (propType !== 'object') {
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+	      }
+	      for (var key in shapeTypes) {
+	        var checker = shapeTypes[key];
+	        if (!checker) {
+	          continue;
+	        }
+	        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+	        if (error) {
+	          return error;
+	        }
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createStrictShapeTypeChecker(shapeTypes) {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      var propValue = props[propName];
+	      var propType = getPropType(propValue);
+	      if (propType !== 'object') {
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+	      }
+	      // We need to check all keys in case some are required but missing from
+	      // props.
+	      var allKeys = assign({}, props[propName], shapeTypes);
+	      for (var key in allKeys) {
+	        var checker = shapeTypes[key];
+	        if (!checker) {
+	          return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` key `' + key + '` supplied to `' + componentName + '`.' + '\nBad object: ' + JSON.stringify(props[propName], null, '  ') + '\nValid keys: ' + JSON.stringify(Object.keys(shapeTypes), null, '  '));
+	        }
+	        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+	        if (error) {
+	          return error;
+	        }
+	      }
+	      return null;
+	    }
+
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function isNode(propValue) {
+	    switch (typeof propValue === 'undefined' ? 'undefined' : _typeof(propValue)) {
+	      case 'number':
+	      case 'string':
+	      case 'undefined':
+	        return true;
+	      case 'boolean':
+	        return !propValue;
+	      case 'object':
+	        if (Array.isArray(propValue)) {
+	          return propValue.every(isNode);
+	        }
+	        if (propValue === null || isValidElement(propValue)) {
+	          return true;
+	        }
+
+	        var iteratorFn = getIteratorFn(propValue);
+	        if (iteratorFn) {
+	          var iterator = iteratorFn.call(propValue);
+	          var step;
+	          if (iteratorFn !== propValue.entries) {
+	            while (!(step = iterator.next()).done) {
+	              if (!isNode(step.value)) {
+	                return false;
+	              }
+	            }
+	          } else {
+	            // Iterator will provide entry [k,v] tuples rather than values.
+	            while (!(step = iterator.next()).done) {
+	              var entry = step.value;
+	              if (entry) {
+	                if (!isNode(entry[1])) {
+	                  return false;
+	                }
+	              }
+	            }
+	          }
+	        } else {
+	          return false;
+	        }
+
+	        return true;
+	      default:
+	        return false;
+	    }
+	  }
+
+	  function isSymbol(propType, propValue) {
+	    // Native Symbol.
+	    if (propType === 'symbol') {
+	      return true;
+	    }
+
+	    // falsy value can't be a Symbol
+	    if (!propValue) {
+	      return false;
+	    }
+
+	    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
+	    if (propValue['@@toStringTag'] === 'Symbol') {
+	      return true;
+	    }
+
+	    // Fallback for non-spec compliant Symbols which are polyfilled.
+	    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
+	      return true;
+	    }
+
+	    return false;
+	  }
+
+	  // Equivalent of `typeof` but with special handling for array and regexp.
+	  function getPropType(propValue) {
+	    var propType = typeof propValue === 'undefined' ? 'undefined' : _typeof(propValue);
+	    if (Array.isArray(propValue)) {
+	      return 'array';
+	    }
+	    if (propValue instanceof RegExp) {
+	      // Old webkits (at least until Android 4.0) return 'function' rather than
+	      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+	      // passes PropTypes.object.
+	      return 'object';
+	    }
+	    if (isSymbol(propType, propValue)) {
+	      return 'symbol';
+	    }
+	    return propType;
+	  }
+
+	  // This handles more types than `getPropType`. Only used for error messages.
+	  // See `createPrimitiveTypeChecker`.
+	  function getPreciseType(propValue) {
+	    if (typeof propValue === 'undefined' || propValue === null) {
+	      return '' + propValue;
+	    }
+	    var propType = getPropType(propValue);
+	    if (propType === 'object') {
+	      if (propValue instanceof Date) {
+	        return 'date';
+	      } else if (propValue instanceof RegExp) {
+	        return 'regexp';
+	      }
+	    }
+	    return propType;
+	  }
+
+	  // Returns a string that is postfixed to a warning about an invalid type.
+	  // For example, "undefined" or "of type array"
+	  function getPostfixForTypeWarning(value) {
+	    var type = getPreciseType(value);
+	    switch (type) {
+	      case 'array':
+	      case 'object':
+	        return 'an ' + type;
+	      case 'boolean':
+	      case 'date':
+	      case 'regexp':
+	        return 'a ' + type;
+	      default:
+	        return type;
+	    }
+	  }
+
+	  // Returns class name of the object, if any.
+	  function getClassName(propValue) {
+	    if (!propValue.constructor || !propValue.constructor.name) {
+	      return ANONYMOUS;
+	    }
+	    return propValue.constructor.name;
+	  }
+
+	  ReactPropTypes.checkPropTypes = checkPropTypes;
+	  ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
+	  ReactPropTypes.PropTypes = ReactPropTypes;
+
+	  return ReactPropTypes;
+	};
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports) {
+
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	'use strict';
+
+	var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+
+	module.exports = ReactPropTypesSecret;
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	'use strict';
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	var printWarning = function printWarning() {};
+
+	if (process.env.NODE_ENV !== 'production') {
+	  var ReactPropTypesSecret = __webpack_require__(32);
+	  var loggedTypeFailures = {};
+	  var has = Function.call.bind(Object.prototype.hasOwnProperty);
+
+	  printWarning = function printWarning(text) {
+	    var message = 'Warning: ' + text;
+	    if (typeof console !== 'undefined') {
+	      console.error(message);
+	    }
+	    try {
+	      // --- Welcome to debugging React ---
+	      // This error was thrown as a convenience so that you can use this stack
+	      // to find the callsite that caused this warning to fire.
+	      throw new Error(message);
+	    } catch (x) {}
+	  };
+	}
+
+	/**
+	 * Assert that the values match with the type specs.
+	 * Error messages are memorized and will only be shown once.
+	 *
+	 * @param {object} typeSpecs Map of name to a ReactPropType
+	 * @param {object} values Runtime values that need to be type-checked
+	 * @param {string} location e.g. "prop", "context", "child context"
+	 * @param {string} componentName Name of the component for error messages.
+	 * @param {?Function} getStack Returns the component stack.
+	 * @private
+	 */
+	function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
+	  if (process.env.NODE_ENV !== 'production') {
+	    for (var typeSpecName in typeSpecs) {
+	      if (has(typeSpecs, typeSpecName)) {
+	        var error;
+	        // Prop type validation may throw. In case they do, we don't want to
+	        // fail the render phase where it didn't fail before. So we log it.
+	        // After these have been cleaned up, we'll let them throw.
+	        try {
+	          // This is intentionally an invariant that gets caught. It's the same
+	          // behavior as without this statement except with a better message.
+	          if (typeof typeSpecs[typeSpecName] !== 'function') {
+	            var err = Error((componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' + 'it must be a function, usually from the `prop-types` package, but received `' + _typeof(typeSpecs[typeSpecName]) + '`.');
+	            err.name = 'Invariant Violation';
+	            throw err;
+	          }
+	          error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
+	        } catch (ex) {
+	          error = ex;
+	        }
+	        if (error && !(error instanceof Error)) {
+	          printWarning((componentName || 'React class') + ': type specification of ' + location + ' `' + typeSpecName + '` is invalid; the type checker ' + 'function must return `null` or an `Error` but returned a ' + (typeof error === 'undefined' ? 'undefined' : _typeof(error)) + '. ' + 'You may have forgotten to pass an argument to the type checker ' + 'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' + 'shape all require an argument).');
+	        }
+	        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
+	          // Only monitor this failure once because there tends to be a lot of the
+	          // same error.
+	          loggedTypeFailures[error.message] = true;
+
+	          var stack = getStack ? getStack() : '';
+
+	          printWarning('Failed ' + location + ' type: ' + error.message + (stack != null ? stack : ''));
+	        }
+	      }
+	    }
+	  }
+	}
+
+	/**
+	 * Resets warning cache when testing.
+	 *
+	 * @private
+	 */
+	checkPropTypes.resetWarningCache = function () {
+	  if (process.env.NODE_ENV !== 'production') {
+	    loggedTypeFailures = {};
+	  }
+	};
+
+	module.exports = checkPropTypes;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	'use strict';
+
+	var ReactPropTypesSecret = __webpack_require__(32);
+
+	function emptyFunction() {}
+	function emptyFunctionWithReset() {}
+	emptyFunctionWithReset.resetWarningCache = emptyFunction;
+
+	module.exports = function () {
+	  function shim(props, propName, componentName, location, propFullName, secret) {
+	    if (secret === ReactPropTypesSecret) {
+	      // It is still safe when called from React.
+	      return;
+	    }
+	    var err = new Error('Calling PropTypes validators directly is not supported by the `prop-types` package. ' + 'Use PropTypes.checkPropTypes() to call them. ' + 'Read more at http://fb.me/use-check-prop-types');
+	    err.name = 'Invariant Violation';
+	    throw err;
+	  };
+	  shim.isRequired = shim;
+	  function getShim() {
+	    return shim;
+	  };
+	  // Important!
+	  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.
+	  var ReactPropTypes = {
+	    array: shim,
+	    bool: shim,
+	    func: shim,
+	    number: shim,
+	    object: shim,
+	    string: shim,
+	    symbol: shim,
+
+	    any: shim,
+	    arrayOf: getShim,
+	    element: shim,
+	    elementType: shim,
+	    instanceOf: getShim,
+	    node: shim,
+	    objectOf: getShim,
+	    oneOf: getShim,
+	    oneOfType: getShim,
+	    shape: getShim,
+	    exact: getShim,
+
+	    checkPropTypes: emptyFunctionWithReset,
+	    resetWarningCache: emptyFunction
+	  };
+
+	  ReactPropTypes.PropTypes = ReactPropTypes;
+
+	  return ReactPropTypes;
+	};
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	'use strict';
 
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -2569,7 +3789,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _createHashHistory = __webpack_require__(26);
+	var _createHashHistory = __webpack_require__(36);
 
 	var _createHashHistory2 = _interopRequireDefault(_createHashHistory);
 
@@ -2637,7 +3857,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = HashRouter;
 
 /***/ }),
-/* 26 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2975,7 +4195,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = createHashHistory;
 
 /***/ }),
-/* 27 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3117,14 +4337,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = Link;
 
 /***/ }),
-/* 28 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _MemoryRouter = __webpack_require__(29);
+	var _MemoryRouter = __webpack_require__(39);
 
 	var _MemoryRouter2 = _interopRequireDefault(_MemoryRouter);
 
@@ -3135,16 +4355,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = _MemoryRouter2.default; // Written in this round about way for babel-transform-imports
 
 /***/ }),
-/* 29 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 	exports.__esModule = true;
 
-	var _warning = __webpack_require__(14);
+	var _warning = __webpack_require__(25);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
@@ -3152,13 +4372,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _propTypes = __webpack_require__(2);
+	var _propTypes = __webpack_require__(27);
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _createMemoryHistory = __webpack_require__(30);
-
-	var _createMemoryHistory2 = _interopRequireDefault(_createMemoryHistory);
+	var _history = __webpack_require__(40);
 
 	var _Router = __webpack_require__(24);
 
@@ -3177,12 +4395,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _possibleConstructorReturn(self, call) {
 	  if (!self) {
 	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-	  }return call && ((typeof call === 'undefined' ? 'undefined' : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
 	}
 
 	function _inherits(subClass, superClass) {
 	  if (typeof superClass !== "function" && superClass !== null) {
-	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === 'undefined' ? 'undefined' : _typeof(superClass)));
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
 	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 	}
 
@@ -3201,11 +4419,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	      args[_key] = arguments[_key];
 	    }
 
-	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.history = (0, _createMemoryHistory2.default)(_this.props), _temp), _possibleConstructorReturn(_this, _ret);
+	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.history = (0, _history.createMemoryHistory)(_this.props), _temp), _possibleConstructorReturn(_this, _ret);
 	  }
 
 	  MemoryRouter.prototype.componentWillMount = function componentWillMount() {
-	    (0, _warning2.default)(!this.props.history, '<MemoryRouter> ignores the history prop. To use a custom history, ' + 'use `import { Router }` instead of `import { MemoryRouter as Router }`.');
+	    (0, _warning2.default)(!this.props.history, "<MemoryRouter> ignores the history prop. To use a custom history, " + "use `import { Router }` instead of `import { MemoryRouter as Router }`.");
 	  };
 
 	  MemoryRouter.prototype.render = function render() {
@@ -3225,7 +4443,66 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = MemoryRouter;
 
 /***/ }),
-/* 30 */
+/* 40 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+	exports.createPath = exports.parsePath = exports.locationsAreEqual = exports.createLocation = exports.createMemoryHistory = exports.createHashHistory = exports.createBrowserHistory = undefined;
+
+	var _LocationUtils = __webpack_require__(17);
+
+	Object.defineProperty(exports, 'createLocation', {
+	  enumerable: true,
+	  get: function get() {
+	    return _LocationUtils.createLocation;
+	  }
+	});
+	Object.defineProperty(exports, 'locationsAreEqual', {
+	  enumerable: true,
+	  get: function get() {
+	    return _LocationUtils.locationsAreEqual;
+	  }
+	});
+
+	var _PathUtils = __webpack_require__(20);
+
+	Object.defineProperty(exports, 'parsePath', {
+	  enumerable: true,
+	  get: function get() {
+	    return _PathUtils.parsePath;
+	  }
+	});
+	Object.defineProperty(exports, 'createPath', {
+	  enumerable: true,
+	  get: function get() {
+	    return _PathUtils.createPath;
+	  }
+	});
+
+	var _createBrowserHistory2 = __webpack_require__(15);
+
+	var _createBrowserHistory3 = _interopRequireDefault(_createBrowserHistory2);
+
+	var _createHashHistory2 = __webpack_require__(36);
+
+	var _createHashHistory3 = _interopRequireDefault(_createHashHistory2);
+
+	var _createMemoryHistory2 = __webpack_require__(41);
+
+	var _createMemoryHistory3 = _interopRequireDefault(_createMemoryHistory2);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	exports.createBrowserHistory = _createBrowserHistory3.default;
+	exports.createHashHistory = _createHashHistory3.default;
+	exports.createMemoryHistory = _createMemoryHistory3.default;
+
+/***/ }),
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3415,7 +4692,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = createMemoryHistory;
 
 /***/ }),
-/* 31 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3448,11 +4725,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _Route = __webpack_require__(32);
+	var _Route = __webpack_require__(43);
 
 	var _Route2 = _interopRequireDefault(_Route);
 
-	var _Link = __webpack_require__(27);
+	var _Link = __webpack_require__(37);
 
 	var _Link2 = _interopRequireDefault(_Link);
 
@@ -3526,14 +4803,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = NavLink;
 
 /***/ }),
-/* 32 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _Route = __webpack_require__(33);
+	var _Route = __webpack_require__(44);
 
 	var _Route2 = _interopRequireDefault(_Route);
 
@@ -3544,10 +4821,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = _Route2.default; // Written in this round about way for babel-transform-imports
 
 /***/ }),
-/* 33 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -3563,11 +4840,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }return target;
 	};
 
-	var _warning = __webpack_require__(14);
+	var _warning = __webpack_require__(25);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
-	var _invariant = __webpack_require__(16);
+	var _invariant = __webpack_require__(26);
 
 	var _invariant2 = _interopRequireDefault(_invariant);
 
@@ -3575,11 +4852,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _propTypes = __webpack_require__(2);
+	var _propTypes = __webpack_require__(27);
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _matchPath = __webpack_require__(34);
+	var _matchPath = __webpack_require__(45);
 
 	var _matchPath2 = _interopRequireDefault(_matchPath);
 
@@ -3596,12 +4873,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _possibleConstructorReturn(self, call) {
 	  if (!self) {
 	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-	  }return call && ((typeof call === 'undefined' ? 'undefined' : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
 	}
 
 	function _inherits(subClass, superClass) {
 	  if (typeof superClass !== "function" && superClass !== null) {
-	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === 'undefined' ? 'undefined' : _typeof(superClass)));
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
 	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 	}
 
@@ -3651,21 +4928,21 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    if (computedMatch) return computedMatch; // <Switch> already computed the match for us
 
-	    (0, _invariant2.default)(router, 'You should not use <Route> or withRouter() outside a <Router>');
+	    (0, _invariant2.default)(router, "You should not use <Route> or withRouter() outside a <Router>");
 
 	    var route = router.route;
 
 	    var pathname = (location || route.location).pathname;
 
-	    return path ? (0, _matchPath2.default)(pathname, { path: path, strict: strict, exact: exact, sensitive: sensitive }) : route.match;
+	    return (0, _matchPath2.default)(pathname, { path: path, strict: strict, exact: exact, sensitive: sensitive }, route.match);
 	  };
 
 	  Route.prototype.componentWillMount = function componentWillMount() {
-	    (0, _warning2.default)(!(this.props.component && this.props.render), 'You should not use <Route component> and <Route render> in the same route; <Route render> will be ignored');
+	    (0, _warning2.default)(!(this.props.component && this.props.render), "You should not use <Route component> and <Route render> in the same route; <Route render> will be ignored");
 
-	    (0, _warning2.default)(!(this.props.component && this.props.children && !isEmptyChildren(this.props.children)), 'You should not use <Route component> and <Route children> in the same route; <Route children> will be ignored');
+	    (0, _warning2.default)(!(this.props.component && this.props.children && !isEmptyChildren(this.props.children)), "You should not use <Route component> and <Route children> in the same route; <Route children> will be ignored");
 
-	    (0, _warning2.default)(!(this.props.render && this.props.children && !isEmptyChildren(this.props.children)), 'You should not use <Route render> and <Route children> in the same route; <Route children> will be ignored');
+	    (0, _warning2.default)(!(this.props.render && this.props.children && !isEmptyChildren(this.props.children)), "You should not use <Route render> and <Route children> in the same route; <Route children> will be ignored");
 	  };
 
 	  Route.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps, nextContext) {
@@ -3692,10 +4969,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var location = this.props.location || route.location;
 	    var props = { match: match, location: location, history: history, staticContext: staticContext };
 
-	    return component ? // component prop gets first priority, only called if there's a match
-	    match ? _react2.default.createElement(component, props) : null : render ? // render prop is next, only called if there's a match
-	    match ? render(props) : null : children ? // children come last, always called
-	    typeof children === 'function' ? children(props) : !isEmptyChildren(children) ? _react2.default.Children.only(children) : null : null;
+	    if (component) return match ? _react2.default.createElement(component, props) : null;
+
+	    if (render) return match ? render(props) : null;
+
+	    if (typeof children === "function") return children(props);
+
+	    if (children && !isEmptyChildren(children)) return _react2.default.Children.only(children);
+
+	    return null;
 	  };
 
 	  return Route;
@@ -3725,14 +5007,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = Route;
 
 /***/ }),
-/* 34 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	exports.__esModule = true;
 
-	var _pathToRegexp = __webpack_require__(35);
+	var _pathToRegexp = __webpack_require__(46);
 
 	var _pathToRegexp2 = _interopRequireDefault(_pathToRegexp);
 
@@ -3745,7 +5027,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var cacheCount = 0;
 
 	var compilePath = function compilePath(pattern, options) {
-	  var cacheKey = '' + options.end + options.strict + options.sensitive;
+	  var cacheKey = "" + options.end + options.strict + options.sensitive;
 	  var cache = patternCache[cacheKey] || (patternCache[cacheKey] = {});
 
 	  if (cache[pattern]) return cache[pattern];
@@ -3767,18 +5049,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	 */
 	var matchPath = function matchPath(pathname) {
 	  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+	  var parent = arguments[2];
 
-	  if (typeof options === 'string') options = { path: options };
+	  if (typeof options === "string") options = { path: options };
 
 	  var _options = options,
-	      _options$path = _options.path,
-	      path = _options$path === undefined ? '/' : _options$path,
+	      path = _options.path,
 	      _options$exact = _options.exact,
 	      exact = _options$exact === undefined ? false : _options$exact,
 	      _options$strict = _options.strict,
 	      strict = _options$strict === undefined ? false : _options$strict,
 	      _options$sensitive = _options.sensitive,
 	      sensitive = _options$sensitive === undefined ? false : _options$sensitive;
+
+	  if (path == null) return parent;
 
 	  var _compilePath = compilePath(path, { end: exact, strict: strict, sensitive: sensitive }),
 	      re = _compilePath.re,
@@ -3797,7 +5081,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  return {
 	    path: path, // the path pattern used to match
-	    url: path === '/' && url === '' ? '/' : url, // the matched portion of the URL
+	    url: path === "/" && url === "" ? "/" : url, // the matched portion of the URL
 	    isExact: isExact, // whether or not we matched exactly
 	    params: keys.reduce(function (memo, key, index) {
 	      memo[key.name] = values[index];
@@ -3809,14 +5093,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = matchPath;
 
 /***/ }),
-/* 35 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-	var isarray = __webpack_require__(36);
+	var isarray = __webpack_require__(47);
 
 	/**
 	 * Expose `pathToRegexp`.
@@ -4243,7 +5527,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ }),
-/* 36 */
+/* 47 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -4253,14 +5537,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ }),
-/* 37 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _Prompt = __webpack_require__(38);
+	var _Prompt = __webpack_require__(49);
 
 	var _Prompt2 = _interopRequireDefault(_Prompt);
 
@@ -4271,10 +5555,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = _Prompt2.default; // Written in this round about way for babel-transform-imports
 
 /***/ }),
-/* 38 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -4284,11 +5568,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _propTypes = __webpack_require__(2);
+	var _propTypes = __webpack_require__(27);
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _invariant = __webpack_require__(16);
+	var _invariant = __webpack_require__(26);
 
 	var _invariant2 = _interopRequireDefault(_invariant);
 
@@ -4305,12 +5589,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _possibleConstructorReturn(self, call) {
 	  if (!self) {
 	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-	  }return call && ((typeof call === 'undefined' ? 'undefined' : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
 	}
 
 	function _inherits(subClass, superClass) {
 	  if (typeof superClass !== "function" && superClass !== null) {
-	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === 'undefined' ? 'undefined' : _typeof(superClass)));
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
 	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 	}
 
@@ -4341,7 +5625,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  };
 
 	  Prompt.prototype.componentWillMount = function componentWillMount() {
-	    (0, _invariant2.default)(this.context.router, 'You should not use <Prompt> outside a <Router>');
+	    (0, _invariant2.default)(this.context.router, "You should not use <Prompt> outside a <Router>");
 
 	    if (this.props.when) this.enable(this.props.message);
 	  };
@@ -4382,14 +5666,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = Prompt;
 
 /***/ }),
-/* 39 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _Redirect = __webpack_require__(40);
+	var _Redirect = __webpack_require__(51);
 
 	var _Redirect2 = _interopRequireDefault(_Redirect);
 
@@ -4400,32 +5684,46 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = _Redirect2.default; // Written in this round about way for babel-transform-imports
 
 /***/ }),
-/* 40 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 	exports.__esModule = true;
 
+	var _extends = Object.assign || function (target) {
+	  for (var i = 1; i < arguments.length; i++) {
+	    var source = arguments[i];for (var key in source) {
+	      if (Object.prototype.hasOwnProperty.call(source, key)) {
+	        target[key] = source[key];
+	      }
+	    }
+	  }return target;
+	};
+
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _propTypes = __webpack_require__(2);
+	var _propTypes = __webpack_require__(27);
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _warning = __webpack_require__(14);
+	var _warning = __webpack_require__(25);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
-	var _invariant = __webpack_require__(16);
+	var _invariant = __webpack_require__(26);
 
 	var _invariant2 = _interopRequireDefault(_invariant);
 
-	var _history = __webpack_require__(41);
+	var _history = __webpack_require__(40);
+
+	var _generatePath = __webpack_require__(52);
+
+	var _generatePath2 = _interopRequireDefault(_generatePath);
 
 	function _interopRequireDefault(obj) {
 	  return obj && obj.__esModule ? obj : { default: obj };
@@ -4440,12 +5738,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _possibleConstructorReturn(self, call) {
 	  if (!self) {
 	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-	  }return call && ((typeof call === 'undefined' ? 'undefined' : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
 	}
 
 	function _inherits(subClass, superClass) {
 	  if (typeof superClass !== "function" && superClass !== null) {
-	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === 'undefined' ? 'undefined' : _typeof(superClass)));
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
 	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 	}
 
@@ -4467,7 +5765,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  };
 
 	  Redirect.prototype.componentWillMount = function componentWillMount() {
-	    (0, _invariant2.default)(this.context.router, 'You should not use <Redirect> outside a <Router>');
+	    (0, _invariant2.default)(this.context.router, "You should not use <Redirect> outside a <Router>");
 
 	    if (this.isStatic()) this.perform();
 	  };
@@ -4481,18 +5779,35 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var nextTo = (0, _history.createLocation)(this.props.to);
 
 	    if ((0, _history.locationsAreEqual)(prevTo, nextTo)) {
-	      (0, _warning2.default)(false, 'You tried to redirect to the same route you\'re currently on: ' + ('"' + nextTo.pathname + nextTo.search + '"'));
+	      (0, _warning2.default)(false, "You tried to redirect to the same route you're currently on: " + ("\"" + nextTo.pathname + nextTo.search + "\""));
 	      return;
 	    }
 
 	    this.perform();
 	  };
 
+	  Redirect.prototype.computeTo = function computeTo(_ref) {
+	    var computedMatch = _ref.computedMatch,
+	        to = _ref.to;
+
+	    if (computedMatch) {
+	      if (typeof to === "string") {
+	        return (0, _generatePath2.default)(to, computedMatch.params);
+	      } else {
+	        return _extends({}, to, {
+	          pathname: (0, _generatePath2.default)(to.pathname, computedMatch.params)
+	        });
+	      }
+	    }
+
+	    return to;
+	  };
+
 	  Redirect.prototype.perform = function perform() {
 	    var history = this.context.router.history;
-	    var _props = this.props,
-	        push = _props.push,
-	        to = _props.to;
+	    var push = this.props.push;
+
+	    var to = this.computeTo(this.props);
 
 	    if (push) {
 	      history.push(to);
@@ -4509,6 +5824,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}(_react2.default.Component);
 
 	Redirect.propTypes = {
+	  computedMatch: _propTypes2.default.object, // private, from <Switch>
 	  push: _propTypes2.default.bool,
 	  from: _propTypes2.default.string,
 	  to: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object]).isRequired
@@ -4528,73 +5844,66 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = Redirect;
 
 /***/ }),
-/* 41 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	exports.__esModule = true;
-	exports.createPath = exports.parsePath = exports.locationsAreEqual = exports.createLocation = exports.createMemoryHistory = exports.createHashHistory = exports.createBrowserHistory = undefined;
 
-	var _LocationUtils = __webpack_require__(17);
+	var _pathToRegexp = __webpack_require__(46);
 
-	Object.defineProperty(exports, 'createLocation', {
-	  enumerable: true,
-	  get: function get() {
-	    return _LocationUtils.createLocation;
-	  }
-	});
-	Object.defineProperty(exports, 'locationsAreEqual', {
-	  enumerable: true,
-	  get: function get() {
-	    return _LocationUtils.locationsAreEqual;
-	  }
-	});
-
-	var _PathUtils = __webpack_require__(20);
-
-	Object.defineProperty(exports, 'parsePath', {
-	  enumerable: true,
-	  get: function get() {
-	    return _PathUtils.parsePath;
-	  }
-	});
-	Object.defineProperty(exports, 'createPath', {
-	  enumerable: true,
-	  get: function get() {
-	    return _PathUtils.createPath;
-	  }
-	});
-
-	var _createBrowserHistory2 = __webpack_require__(15);
-
-	var _createBrowserHistory3 = _interopRequireDefault(_createBrowserHistory2);
-
-	var _createHashHistory2 = __webpack_require__(26);
-
-	var _createHashHistory3 = _interopRequireDefault(_createHashHistory2);
-
-	var _createMemoryHistory2 = __webpack_require__(30);
-
-	var _createMemoryHistory3 = _interopRequireDefault(_createMemoryHistory2);
+	var _pathToRegexp2 = _interopRequireDefault(_pathToRegexp);
 
 	function _interopRequireDefault(obj) {
 	  return obj && obj.__esModule ? obj : { default: obj };
 	}
 
-	exports.createBrowserHistory = _createBrowserHistory3.default;
-	exports.createHashHistory = _createHashHistory3.default;
-	exports.createMemoryHistory = _createMemoryHistory3.default;
+	var patternCache = {};
+	var cacheLimit = 10000;
+	var cacheCount = 0;
+
+	var compileGenerator = function compileGenerator(pattern) {
+	  var cacheKey = pattern;
+	  var cache = patternCache[cacheKey] || (patternCache[cacheKey] = {});
+
+	  if (cache[pattern]) return cache[pattern];
+
+	  var compiledGenerator = _pathToRegexp2.default.compile(pattern);
+
+	  if (cacheCount < cacheLimit) {
+	    cache[pattern] = compiledGenerator;
+	    cacheCount++;
+	  }
+
+	  return compiledGenerator;
+	};
+
+	/**
+	 * Public API for generating a URL pathname from a pattern and parameters.
+	 */
+	var generatePath = function generatePath() {
+	  var pattern = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "/";
+	  var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+	  if (pattern === "/") {
+	    return pattern;
+	  }
+	  var generator = compileGenerator(pattern);
+	  return generator(params, { pretty: true });
+	};
+
+	exports.default = generatePath;
 
 /***/ }),
-/* 42 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _StaticRouter = __webpack_require__(43);
+	var _StaticRouter = __webpack_require__(54);
 
 	var _StaticRouter2 = _interopRequireDefault(_StaticRouter);
 
@@ -4605,10 +5914,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = _StaticRouter2.default; // Written in this round about way for babel-transform-imports
 
 /***/ }),
-/* 43 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -4624,11 +5933,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }return target;
 	};
 
-	var _warning = __webpack_require__(14);
+	var _warning = __webpack_require__(25);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
-	var _invariant = __webpack_require__(16);
+	var _invariant = __webpack_require__(26);
 
 	var _invariant2 = _interopRequireDefault(_invariant);
 
@@ -4636,11 +5945,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _propTypes = __webpack_require__(2);
+	var _propTypes = __webpack_require__(27);
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _PathUtils = __webpack_require__(20);
+	var _history = __webpack_require__(40);
 
 	var _Router = __webpack_require__(24);
 
@@ -4665,42 +5974,31 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _possibleConstructorReturn(self, call) {
 	  if (!self) {
 	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-	  }return call && ((typeof call === 'undefined' ? 'undefined' : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
 	}
 
 	function _inherits(subClass, superClass) {
 	  if (typeof superClass !== "function" && superClass !== null) {
-	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === 'undefined' ? 'undefined' : _typeof(superClass)));
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
 	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 	}
 
-	var normalizeLocation = function normalizeLocation(object) {
-	  var _object$pathname = object.pathname,
-	      pathname = _object$pathname === undefined ? '/' : _object$pathname,
-	      _object$search = object.search,
-	      search = _object$search === undefined ? '' : _object$search,
-	      _object$hash = object.hash,
-	      hash = _object$hash === undefined ? '' : _object$hash;
-
-	  return {
-	    pathname: pathname,
-	    search: search === '?' ? '' : search,
-	    hash: hash === '#' ? '' : hash
-	  };
+	var addLeadingSlash = function addLeadingSlash(path) {
+	  return path.charAt(0) === "/" ? path : "/" + path;
 	};
 
 	var addBasename = function addBasename(basename, location) {
 	  if (!basename) return location;
 
 	  return _extends({}, location, {
-	    pathname: (0, _PathUtils.addLeadingSlash)(basename) + location.pathname
+	    pathname: addLeadingSlash(basename) + location.pathname
 	  });
 	};
 
 	var stripBasename = function stripBasename(basename, location) {
 	  if (!basename) return location;
 
-	  var base = (0, _PathUtils.addLeadingSlash)(basename);
+	  var base = addLeadingSlash(basename);
 
 	  if (location.pathname.indexOf(base) !== 0) return location;
 
@@ -4709,17 +6007,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	  });
 	};
 
-	var createLocation = function createLocation(location) {
-	  return typeof location === 'string' ? (0, _PathUtils.parsePath)(location) : normalizeLocation(location);
-	};
-
 	var createURL = function createURL(location) {
-	  return typeof location === 'string' ? location : (0, _PathUtils.createPath)(location);
+	  return typeof location === "string" ? location : (0, _history.createPath)(location);
 	};
 
 	var staticHandler = function staticHandler(methodName) {
 	  return function () {
-	    (0, _invariant2.default)(false, 'You cannot %s with <StaticRouter>', methodName);
+	    (0, _invariant2.default)(false, "You cannot %s with <StaticRouter>", methodName);
 	  };
 	};
 
@@ -4745,22 +6039,22 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 
 	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.createHref = function (path) {
-	      return (0, _PathUtils.addLeadingSlash)(_this.props.basename + createURL(path));
+	      return addLeadingSlash(_this.props.basename + createURL(path));
 	    }, _this.handlePush = function (location) {
 	      var _this$props = _this.props,
 	          basename = _this$props.basename,
 	          context = _this$props.context;
 
-	      context.action = 'PUSH';
-	      context.location = addBasename(basename, createLocation(location));
+	      context.action = "PUSH";
+	      context.location = addBasename(basename, (0, _history.createLocation)(location));
 	      context.url = createURL(context.location);
 	    }, _this.handleReplace = function (location) {
 	      var _this$props2 = _this.props,
 	          basename = _this$props2.basename,
 	          context = _this$props2.context;
 
-	      context.action = 'REPLACE';
-	      context.location = addBasename(basename, createLocation(location));
+	      context.action = "REPLACE";
+	      context.location = addBasename(basename, (0, _history.createLocation)(location));
 	      context.url = createURL(context.location);
 	    }, _this.handleListen = function () {
 	      return noop;
@@ -4778,7 +6072,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  };
 
 	  StaticRouter.prototype.componentWillMount = function componentWillMount() {
-	    (0, _warning2.default)(!this.props.history, '<StaticRouter> ignores the history prop. To use a custom history, ' + 'use `import { Router }` instead of `import { StaticRouter as Router }`.');
+	    (0, _warning2.default)(!this.props.history, "<StaticRouter> ignores the history prop. To use a custom history, " + "use `import { Router }` instead of `import { StaticRouter as Router }`.");
 	  };
 
 	  StaticRouter.prototype.render = function render() {
@@ -4786,17 +6080,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	        basename = _props.basename,
 	        context = _props.context,
 	        location = _props.location,
-	        props = _objectWithoutProperties(_props, ['basename', 'context', 'location']);
+	        props = _objectWithoutProperties(_props, ["basename", "context", "location"]);
 
 	    var history = {
 	      createHref: this.createHref,
-	      action: 'POP',
-	      location: stripBasename(basename, createLocation(location)),
+	      action: "POP",
+	      location: stripBasename(basename, (0, _history.createLocation)(location)),
 	      push: this.handlePush,
 	      replace: this.handleReplace,
-	      go: staticHandler('go'),
-	      goBack: staticHandler('goBack'),
-	      goForward: staticHandler('goForward'),
+	      go: staticHandler("go"),
+	      goBack: staticHandler("goBack"),
+	      goForward: staticHandler("goForward"),
 	      listen: this.handleListen,
 	      block: this.handleBlock
 	    };
@@ -4813,8 +6107,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  location: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object])
 	};
 	StaticRouter.defaultProps = {
-	  basename: '',
-	  location: '/'
+	  basename: "",
+	  location: "/"
 	};
 	StaticRouter.childContextTypes = {
 	  router: _propTypes2.default.object.isRequired
@@ -4822,14 +6116,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = StaticRouter;
 
 /***/ }),
-/* 44 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _Switch = __webpack_require__(45);
+	var _Switch = __webpack_require__(56);
 
 	var _Switch2 = _interopRequireDefault(_Switch);
 
@@ -4840,10 +6134,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = _Switch2.default; // Written in this round about way for babel-transform-imports
 
 /***/ }),
-/* 45 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -4853,19 +6147,19 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _propTypes = __webpack_require__(2);
+	var _propTypes = __webpack_require__(27);
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _warning = __webpack_require__(14);
+	var _warning = __webpack_require__(25);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
-	var _invariant = __webpack_require__(16);
+	var _invariant = __webpack_require__(26);
 
 	var _invariant2 = _interopRequireDefault(_invariant);
 
-	var _matchPath = __webpack_require__(34);
+	var _matchPath = __webpack_require__(45);
 
 	var _matchPath2 = _interopRequireDefault(_matchPath);
 
@@ -4882,12 +6176,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _possibleConstructorReturn(self, call) {
 	  if (!self) {
 	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-	  }return call && ((typeof call === 'undefined' ? 'undefined' : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
 	}
 
 	function _inherits(subClass, superClass) {
 	  if (typeof superClass !== "function" && superClass !== null) {
-	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === 'undefined' ? 'undefined' : _typeof(superClass)));
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
 	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 	}
 
@@ -4904,7 +6198,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 
 	  Switch.prototype.componentWillMount = function componentWillMount() {
-	    (0, _invariant2.default)(this.context.router, 'You should not use <Switch> outside a <Router>');
+	    (0, _invariant2.default)(this.context.router, "You should not use <Switch> outside a <Router>");
 	  };
 
 	  Switch.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
@@ -4922,20 +6216,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var match = void 0,
 	        child = void 0;
 	    _react2.default.Children.forEach(children, function (element) {
-	      if (!_react2.default.isValidElement(element)) return;
+	      if (match == null && _react2.default.isValidElement(element)) {
+	        var _element$props = element.props,
+	            pathProp = _element$props.path,
+	            exact = _element$props.exact,
+	            strict = _element$props.strict,
+	            sensitive = _element$props.sensitive,
+	            from = _element$props.from;
 
-	      var _element$props = element.props,
-	          pathProp = _element$props.path,
-	          exact = _element$props.exact,
-	          strict = _element$props.strict,
-	          sensitive = _element$props.sensitive,
-	          from = _element$props.from;
+	        var path = pathProp || from;
 
-	      var path = pathProp || from;
-
-	      if (match == null) {
 	        child = element;
-	        match = path ? (0, _matchPath2.default)(location.pathname, { path: path, exact: exact, strict: strict, sensitive: sensitive }) : route.match;
+	        match = (0, _matchPath2.default)(location.pathname, { path: path, exact: exact, strict: strict, sensitive: sensitive }, route.match);
 	      }
 	    });
 
@@ -4957,14 +6249,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = Switch;
 
 /***/ }),
-/* 46 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _matchPath = __webpack_require__(34);
+	var _matchPath = __webpack_require__(45);
 
 	var _matchPath2 = _interopRequireDefault(_matchPath);
 
@@ -4975,14 +6267,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = _matchPath2.default; // Written in this round about way for babel-transform-imports
 
 /***/ }),
-/* 47 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _withRouter = __webpack_require__(48);
+	var _withRouter = __webpack_require__(59);
 
 	var _withRouter2 = _interopRequireDefault(_withRouter);
 
@@ -4993,10 +6285,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = _withRouter2.default; // Written in this round about way for babel-transform-imports
 
 /***/ }),
-/* 48 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	exports.__esModule = true;
 
@@ -5014,15 +6306,15 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _propTypes = __webpack_require__(2);
+	var _propTypes = __webpack_require__(27);
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
-	var _hoistNonReactStatics = __webpack_require__(49);
+	var _hoistNonReactStatics = __webpack_require__(60);
 
 	var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
-	var _Route = __webpack_require__(33);
+	var _Route = __webpack_require__(44);
 
 	var _Route2 = _interopRequireDefault(_Route);
 
@@ -5042,14 +6334,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	var withRouter = function withRouter(Component) {
 	  var C = function C(props) {
 	    var wrappedComponentRef = props.wrappedComponentRef,
-	        remainingProps = _objectWithoutProperties(props, ['wrappedComponentRef']);
+	        remainingProps = _objectWithoutProperties(props, ["wrappedComponentRef"]);
 
-	    return _react2.default.createElement(_Route2.default, { render: function render(routeComponentProps) {
-	        return _react2.default.createElement(Component, _extends({}, remainingProps, routeComponentProps, { ref: wrappedComponentRef }));
-	      } });
+	    return _react2.default.createElement(_Route2.default, {
+	      children: function children(routeComponentProps) {
+	        return _react2.default.createElement(Component, _extends({}, remainingProps, routeComponentProps, {
+	          ref: wrappedComponentRef
+	        }));
+	      }
+	    });
 	  };
 
-	  C.displayName = 'withRouter(' + (Component.displayName || Component.name) + ')';
+	  C.displayName = "withRouter(" + (Component.displayName || Component.name) + ")";
 	  C.WrappedComponent = Component;
 	  C.propTypes = {
 	    wrappedComponentRef: _propTypes2.default.func
@@ -5061,14 +6357,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = withRouter;
 
 /***/ }),
-/* 49 */
+/* 60 */
 /***/ (function(module, exports) {
+
+	'use strict';
 
 	/**
 	 * Copyright 2015, Yahoo! Inc.
 	 * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
 	 */
-	'use strict';
 
 	var REACT_STATICS = {
 	    childContextTypes: true,
@@ -5076,6 +6373,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    defaultProps: true,
 	    displayName: true,
 	    getDefaultProps: true,
+	    getDerivedStateFromProps: true,
 	    mixins: true,
 	    propTypes: true,
 	    type: true
@@ -5098,7 +6396,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var getPrototypeOf = Object.getPrototypeOf;
 	var objectPrototype = getPrototypeOf && getPrototypeOf(Object);
 
-	module.exports = function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
+	function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
 	    if (typeof sourceComponent !== 'string') {
 	        // don't hoist over string (html) components
 
@@ -5130,50 +6428,56 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 
 	    return targetComponent;
-	};
+	}
+
+	module.exports = hoistNonReactStatics;
 
 /***/ }),
-/* 50 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	exports.__esModule = true;
-	exports.withRouter = exports.matchPath = exports.Switch = exports.StaticRouter = exports.Router = exports.Route = exports.Redirect = exports.Prompt = exports.MemoryRouter = undefined;
+	exports.withRouter = exports.matchPath = exports.generatePath = exports.Switch = exports.StaticRouter = exports.Router = exports.Route = exports.Redirect = exports.Prompt = exports.MemoryRouter = undefined;
 
-	var _MemoryRouter2 = __webpack_require__(29);
+	var _MemoryRouter2 = __webpack_require__(62);
 
 	var _MemoryRouter3 = _interopRequireDefault(_MemoryRouter2);
 
-	var _Prompt2 = __webpack_require__(38);
+	var _Prompt2 = __webpack_require__(75);
 
 	var _Prompt3 = _interopRequireDefault(_Prompt2);
 
-	var _Redirect2 = __webpack_require__(40);
+	var _Redirect2 = __webpack_require__(77);
 
 	var _Redirect3 = _interopRequireDefault(_Redirect2);
 
-	var _Route2 = __webpack_require__(33);
+	var _Route2 = __webpack_require__(79);
 
 	var _Route3 = _interopRequireDefault(_Route2);
 
-	var _Router2 = __webpack_require__(24);
+	var _Router2 = __webpack_require__(69);
 
 	var _Router3 = _interopRequireDefault(_Router2);
 
-	var _StaticRouter2 = __webpack_require__(43);
+	var _StaticRouter2 = __webpack_require__(81);
 
 	var _StaticRouter3 = _interopRequireDefault(_StaticRouter2);
 
-	var _Switch2 = __webpack_require__(45);
+	var _Switch2 = __webpack_require__(82);
 
 	var _Switch3 = _interopRequireDefault(_Switch2);
 
-	var _matchPath2 = __webpack_require__(34);
+	var _generatePath2 = __webpack_require__(78);
+
+	var _generatePath3 = _interopRequireDefault(_generatePath2);
+
+	var _matchPath2 = __webpack_require__(80);
 
 	var _matchPath3 = _interopRequireDefault(_matchPath2);
 
-	var _withRouter2 = __webpack_require__(48);
+	var _withRouter2 = __webpack_require__(83);
 
 	var _withRouter3 = _interopRequireDefault(_withRouter2);
 
@@ -5188,11 +6492,2490 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.Router = _Router3.default;
 	exports.StaticRouter = _StaticRouter3.default;
 	exports.Switch = _Switch3.default;
+	exports.generatePath = _generatePath3.default;
 	exports.matchPath = _matchPath3.default;
 	exports.withRouter = _withRouter3.default;
 
 /***/ }),
-/* 51 */
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {"use strict";
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	exports.__esModule = true;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _propTypes = __webpack_require__(63);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _history = __webpack_require__(40);
+
+	var _warning = __webpack_require__(68);
+
+	var _warning2 = _interopRequireDefault(_warning);
+
+	var _Router = __webpack_require__(69);
+
+	var _Router2 = _interopRequireDefault(_Router);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	function _classCallCheck(instance, Constructor) {
+	  if (!(instance instanceof Constructor)) {
+	    throw new TypeError("Cannot call a class as a function");
+	  }
+	}
+
+	function _possibleConstructorReturn(self, call) {
+	  if (!self) {
+	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	}
+
+	function _inherits(subClass, superClass) {
+	  if (typeof superClass !== "function" && superClass !== null) {
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	}
+
+	/**
+	 * The public API for a <Router> that stores location in memory.
+	 */
+	var MemoryRouter = function (_React$Component) {
+	  _inherits(MemoryRouter, _React$Component);
+
+	  function MemoryRouter() {
+	    var _temp, _this, _ret;
+
+	    _classCallCheck(this, MemoryRouter);
+
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+
+	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.history = (0, _history.createMemoryHistory)(_this.props), _temp), _possibleConstructorReturn(_this, _ret);
+	  }
+
+	  MemoryRouter.prototype.render = function render() {
+	    return _react2.default.createElement(_Router2.default, { history: this.history, children: this.props.children });
+	  };
+
+	  return MemoryRouter;
+	}(_react2.default.Component);
+
+	if (process.env.NODE_ENV !== "production") {
+	  MemoryRouter.propTypes = {
+	    initialEntries: _propTypes2.default.array,
+	    initialIndex: _propTypes2.default.number,
+	    getUserConfirmation: _propTypes2.default.func,
+	    keyLength: _propTypes2.default.number,
+	    children: _propTypes2.default.node
+	  };
+
+	  MemoryRouter.prototype.componentDidMount = function () {
+	    process.env.NODE_ENV !== "production" ? (0, _warning2.default)(!this.props.history, "<MemoryRouter> ignores the history prop. To use a custom history, " + "use `import { Router }` instead of `import { MemoryRouter as Router }`.") : void 0;
+	  };
+	}
+
+	exports.default = MemoryRouter;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	if (process.env.NODE_ENV !== 'production') {
+	  var ReactIs = __webpack_require__(28);
+
+	  // By explicitly using `prop-types` you are opting into new development behavior.
+	  // http://fb.me/prop-types-in-prod
+	  var throwOnDirectAccess = true;
+	  module.exports = __webpack_require__(64)(ReactIs.isElement, throwOnDirectAccess);
+	} else {
+	  // By explicitly using `prop-types` you are opting into new production behavior.
+	  // http://fb.me/prop-types-in-prod
+	  module.exports = __webpack_require__(67)();
+	}
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	'use strict';
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	var ReactIs = __webpack_require__(28);
+	var assign = __webpack_require__(8);
+
+	var ReactPropTypesSecret = __webpack_require__(65);
+	var checkPropTypes = __webpack_require__(66);
+
+	var has = Function.call.bind(Object.prototype.hasOwnProperty);
+	var printWarning = function printWarning() {};
+
+	if (process.env.NODE_ENV !== 'production') {
+	  printWarning = function printWarning(text) {
+	    var message = 'Warning: ' + text;
+	    if (typeof console !== 'undefined') {
+	      console.error(message);
+	    }
+	    try {
+	      // --- Welcome to debugging React ---
+	      // This error was thrown as a convenience so that you can use this stack
+	      // to find the callsite that caused this warning to fire.
+	      throw new Error(message);
+	    } catch (x) {}
+	  };
+	}
+
+	function emptyFunctionThatReturnsNull() {
+	  return null;
+	}
+
+	module.exports = function (isValidElement, throwOnDirectAccess) {
+	  /* global Symbol */
+	  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
+	  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
+
+	  /**
+	   * Returns the iterator method function contained on the iterable object.
+	   *
+	   * Be sure to invoke the function with the iterable as context:
+	   *
+	   *     var iteratorFn = getIteratorFn(myIterable);
+	   *     if (iteratorFn) {
+	   *       var iterator = iteratorFn.call(myIterable);
+	   *       ...
+	   *     }
+	   *
+	   * @param {?object} maybeIterable
+	   * @return {?function}
+	   */
+	  function getIteratorFn(maybeIterable) {
+	    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+	    if (typeof iteratorFn === 'function') {
+	      return iteratorFn;
+	    }
+	  }
+
+	  /**
+	   * Collection of methods that allow declaration and validation of props that are
+	   * supplied to React components. Example usage:
+	   *
+	   *   var Props = require('ReactPropTypes');
+	   *   var MyArticle = React.createClass({
+	   *     propTypes: {
+	   *       // An optional string prop named "description".
+	   *       description: Props.string,
+	   *
+	   *       // A required enum prop named "category".
+	   *       category: Props.oneOf(['News','Photos']).isRequired,
+	   *
+	   *       // A prop named "dialog" that requires an instance of Dialog.
+	   *       dialog: Props.instanceOf(Dialog).isRequired
+	   *     },
+	   *     render: function() { ... }
+	   *   });
+	   *
+	   * A more formal specification of how these methods are used:
+	   *
+	   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
+	   *   decl := ReactPropTypes.{type}(.isRequired)?
+	   *
+	   * Each and every declaration produces a function with the same signature. This
+	   * allows the creation of custom validation functions. For example:
+	   *
+	   *  var MyLink = React.createClass({
+	   *    propTypes: {
+	   *      // An optional string or URI prop named "href".
+	   *      href: function(props, propName, componentName) {
+	   *        var propValue = props[propName];
+	   *        if (propValue != null && typeof propValue !== 'string' &&
+	   *            !(propValue instanceof URI)) {
+	   *          return new Error(
+	   *            'Expected a string or an URI for ' + propName + ' in ' +
+	   *            componentName
+	   *          );
+	   *        }
+	   *      }
+	   *    },
+	   *    render: function() {...}
+	   *  });
+	   *
+	   * @internal
+	   */
+
+	  var ANONYMOUS = '<<anonymous>>';
+
+	  // Important!
+	  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
+	  var ReactPropTypes = {
+	    array: createPrimitiveTypeChecker('array'),
+	    bool: createPrimitiveTypeChecker('boolean'),
+	    func: createPrimitiveTypeChecker('function'),
+	    number: createPrimitiveTypeChecker('number'),
+	    object: createPrimitiveTypeChecker('object'),
+	    string: createPrimitiveTypeChecker('string'),
+	    symbol: createPrimitiveTypeChecker('symbol'),
+
+	    any: createAnyTypeChecker(),
+	    arrayOf: createArrayOfTypeChecker,
+	    element: createElementTypeChecker(),
+	    elementType: createElementTypeTypeChecker(),
+	    instanceOf: createInstanceTypeChecker,
+	    node: createNodeChecker(),
+	    objectOf: createObjectOfTypeChecker,
+	    oneOf: createEnumTypeChecker,
+	    oneOfType: createUnionTypeChecker,
+	    shape: createShapeTypeChecker,
+	    exact: createStrictShapeTypeChecker
+	  };
+
+	  /**
+	   * inlined Object.is polyfill to avoid requiring consumers ship their own
+	   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+	   */
+	  /*eslint-disable no-self-compare*/
+	  function is(x, y) {
+	    // SameValue algorithm
+	    if (x === y) {
+	      // Steps 1-5, 7-10
+	      // Steps 6.b-6.e: +0 != -0
+	      return x !== 0 || 1 / x === 1 / y;
+	    } else {
+	      // Step 6.a: NaN == NaN
+	      return x !== x && y !== y;
+	    }
+	  }
+	  /*eslint-enable no-self-compare*/
+
+	  /**
+	   * We use an Error-like object for backward compatibility as people may call
+	   * PropTypes directly and inspect their output. However, we don't use real
+	   * Errors anymore. We don't inspect their stack anyway, and creating them
+	   * is prohibitively expensive if they are created too often, such as what
+	   * happens in oneOfType() for any type before the one that matched.
+	   */
+	  function PropTypeError(message) {
+	    this.message = message;
+	    this.stack = '';
+	  }
+	  // Make `instanceof Error` still work for returned errors.
+	  PropTypeError.prototype = Error.prototype;
+
+	  function createChainableTypeChecker(validate) {
+	    if (process.env.NODE_ENV !== 'production') {
+	      var manualPropTypeCallCache = {};
+	      var manualPropTypeWarningCount = 0;
+	    }
+	    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+	      componentName = componentName || ANONYMOUS;
+	      propFullName = propFullName || propName;
+
+	      if (secret !== ReactPropTypesSecret) {
+	        if (throwOnDirectAccess) {
+	          // New behavior only for users of `prop-types` package
+	          var err = new Error('Calling PropTypes validators directly is not supported by the `prop-types` package. ' + 'Use `PropTypes.checkPropTypes()` to call them. ' + 'Read more at http://fb.me/use-check-prop-types');
+	          err.name = 'Invariant Violation';
+	          throw err;
+	        } else if (process.env.NODE_ENV !== 'production' && typeof console !== 'undefined') {
+	          // Old behavior for people using React.PropTypes
+	          var cacheKey = componentName + ':' + propName;
+	          if (!manualPropTypeCallCache[cacheKey] &&
+	          // Avoid spamming the console because they are often not actionable except for lib authors
+	          manualPropTypeWarningCount < 3) {
+	            printWarning('You are manually calling a React.PropTypes validation ' + 'function for the `' + propFullName + '` prop on `' + componentName + '`. This is deprecated ' + 'and will throw in the standalone `prop-types` package. ' + 'You may be seeing this warning due to a third-party PropTypes ' + 'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.');
+	            manualPropTypeCallCache[cacheKey] = true;
+	            manualPropTypeWarningCount++;
+	          }
+	        }
+	      }
+	      if (props[propName] == null) {
+	        if (isRequired) {
+	          if (props[propName] === null) {
+	            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
+	          }
+	          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
+	        }
+	        return null;
+	      } else {
+	        return validate(props, propName, componentName, location, propFullName);
+	      }
+	    }
+
+	    var chainedCheckType = checkType.bind(null, false);
+	    chainedCheckType.isRequired = checkType.bind(null, true);
+
+	    return chainedCheckType;
+	  }
+
+	  function createPrimitiveTypeChecker(expectedType) {
+	    function validate(props, propName, componentName, location, propFullName, secret) {
+	      var propValue = props[propName];
+	      var propType = getPropType(propValue);
+	      if (propType !== expectedType) {
+	        // `propValue` being instance of, say, date/regexp, pass the 'object'
+	        // check, but we can offer a more precise error message here rather than
+	        // 'of type `object`'.
+	        var preciseType = getPreciseType(propValue);
+
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createAnyTypeChecker() {
+	    return createChainableTypeChecker(emptyFunctionThatReturnsNull);
+	  }
+
+	  function createArrayOfTypeChecker(typeChecker) {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      if (typeof typeChecker !== 'function') {
+	        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
+	      }
+	      var propValue = props[propName];
+	      if (!Array.isArray(propValue)) {
+	        var propType = getPropType(propValue);
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
+	      }
+	      for (var i = 0; i < propValue.length; i++) {
+	        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
+	        if (error instanceof Error) {
+	          return error;
+	        }
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createElementTypeChecker() {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      var propValue = props[propName];
+	      if (!isValidElement(propValue)) {
+	        var propType = getPropType(propValue);
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createElementTypeTypeChecker() {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      var propValue = props[propName];
+	      if (!ReactIs.isValidElementType(propValue)) {
+	        var propType = getPropType(propValue);
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement type.'));
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createInstanceTypeChecker(expectedClass) {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      if (!(props[propName] instanceof expectedClass)) {
+	        var expectedClassName = expectedClass.name || ANONYMOUS;
+	        var actualClassName = getClassName(props[propName]);
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createEnumTypeChecker(expectedValues) {
+	    if (!Array.isArray(expectedValues)) {
+	      if (process.env.NODE_ENV !== 'production') {
+	        if (arguments.length > 1) {
+	          printWarning('Invalid arguments supplied to oneOf, expected an array, got ' + arguments.length + ' arguments. ' + 'A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z]).');
+	        } else {
+	          printWarning('Invalid argument supplied to oneOf, expected an array.');
+	        }
+	      }
+	      return emptyFunctionThatReturnsNull;
+	    }
+
+	    function validate(props, propName, componentName, location, propFullName) {
+	      var propValue = props[propName];
+	      for (var i = 0; i < expectedValues.length; i++) {
+	        if (is(propValue, expectedValues[i])) {
+	          return null;
+	        }
+	      }
+
+	      var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
+	        var type = getPreciseType(value);
+	        if (type === 'symbol') {
+	          return String(value);
+	        }
+	        return value;
+	      });
+	      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + String(propValue) + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createObjectOfTypeChecker(typeChecker) {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      if (typeof typeChecker !== 'function') {
+	        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
+	      }
+	      var propValue = props[propName];
+	      var propType = getPropType(propValue);
+	      if (propType !== 'object') {
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
+	      }
+	      for (var key in propValue) {
+	        if (has(propValue, key)) {
+	          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+	          if (error instanceof Error) {
+	            return error;
+	          }
+	        }
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createUnionTypeChecker(arrayOfTypeCheckers) {
+	    if (!Array.isArray(arrayOfTypeCheckers)) {
+	      process.env.NODE_ENV !== 'production' ? printWarning('Invalid argument supplied to oneOfType, expected an instance of array.') : void 0;
+	      return emptyFunctionThatReturnsNull;
+	    }
+
+	    for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+	      var checker = arrayOfTypeCheckers[i];
+	      if (typeof checker !== 'function') {
+	        printWarning('Invalid argument supplied to oneOfType. Expected an array of check functions, but ' + 'received ' + getPostfixForTypeWarning(checker) + ' at index ' + i + '.');
+	        return emptyFunctionThatReturnsNull;
+	      }
+	    }
+
+	    function validate(props, propName, componentName, location, propFullName) {
+	      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+	        var checker = arrayOfTypeCheckers[i];
+	        if (checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret) == null) {
+	          return null;
+	        }
+	      }
+
+	      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createNodeChecker() {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      if (!isNode(props[propName])) {
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createShapeTypeChecker(shapeTypes) {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      var propValue = props[propName];
+	      var propType = getPropType(propValue);
+	      if (propType !== 'object') {
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+	      }
+	      for (var key in shapeTypes) {
+	        var checker = shapeTypes[key];
+	        if (!checker) {
+	          continue;
+	        }
+	        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+	        if (error) {
+	          return error;
+	        }
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function createStrictShapeTypeChecker(shapeTypes) {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      var propValue = props[propName];
+	      var propType = getPropType(propValue);
+	      if (propType !== 'object') {
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+	      }
+	      // We need to check all keys in case some are required but missing from
+	      // props.
+	      var allKeys = assign({}, props[propName], shapeTypes);
+	      for (var key in allKeys) {
+	        var checker = shapeTypes[key];
+	        if (!checker) {
+	          return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` key `' + key + '` supplied to `' + componentName + '`.' + '\nBad object: ' + JSON.stringify(props[propName], null, '  ') + '\nValid keys: ' + JSON.stringify(Object.keys(shapeTypes), null, '  '));
+	        }
+	        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+	        if (error) {
+	          return error;
+	        }
+	      }
+	      return null;
+	    }
+
+	    return createChainableTypeChecker(validate);
+	  }
+
+	  function isNode(propValue) {
+	    switch (typeof propValue === 'undefined' ? 'undefined' : _typeof(propValue)) {
+	      case 'number':
+	      case 'string':
+	      case 'undefined':
+	        return true;
+	      case 'boolean':
+	        return !propValue;
+	      case 'object':
+	        if (Array.isArray(propValue)) {
+	          return propValue.every(isNode);
+	        }
+	        if (propValue === null || isValidElement(propValue)) {
+	          return true;
+	        }
+
+	        var iteratorFn = getIteratorFn(propValue);
+	        if (iteratorFn) {
+	          var iterator = iteratorFn.call(propValue);
+	          var step;
+	          if (iteratorFn !== propValue.entries) {
+	            while (!(step = iterator.next()).done) {
+	              if (!isNode(step.value)) {
+	                return false;
+	              }
+	            }
+	          } else {
+	            // Iterator will provide entry [k,v] tuples rather than values.
+	            while (!(step = iterator.next()).done) {
+	              var entry = step.value;
+	              if (entry) {
+	                if (!isNode(entry[1])) {
+	                  return false;
+	                }
+	              }
+	            }
+	          }
+	        } else {
+	          return false;
+	        }
+
+	        return true;
+	      default:
+	        return false;
+	    }
+	  }
+
+	  function isSymbol(propType, propValue) {
+	    // Native Symbol.
+	    if (propType === 'symbol') {
+	      return true;
+	    }
+
+	    // falsy value can't be a Symbol
+	    if (!propValue) {
+	      return false;
+	    }
+
+	    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
+	    if (propValue['@@toStringTag'] === 'Symbol') {
+	      return true;
+	    }
+
+	    // Fallback for non-spec compliant Symbols which are polyfilled.
+	    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
+	      return true;
+	    }
+
+	    return false;
+	  }
+
+	  // Equivalent of `typeof` but with special handling for array and regexp.
+	  function getPropType(propValue) {
+	    var propType = typeof propValue === 'undefined' ? 'undefined' : _typeof(propValue);
+	    if (Array.isArray(propValue)) {
+	      return 'array';
+	    }
+	    if (propValue instanceof RegExp) {
+	      // Old webkits (at least until Android 4.0) return 'function' rather than
+	      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+	      // passes PropTypes.object.
+	      return 'object';
+	    }
+	    if (isSymbol(propType, propValue)) {
+	      return 'symbol';
+	    }
+	    return propType;
+	  }
+
+	  // This handles more types than `getPropType`. Only used for error messages.
+	  // See `createPrimitiveTypeChecker`.
+	  function getPreciseType(propValue) {
+	    if (typeof propValue === 'undefined' || propValue === null) {
+	      return '' + propValue;
+	    }
+	    var propType = getPropType(propValue);
+	    if (propType === 'object') {
+	      if (propValue instanceof Date) {
+	        return 'date';
+	      } else if (propValue instanceof RegExp) {
+	        return 'regexp';
+	      }
+	    }
+	    return propType;
+	  }
+
+	  // Returns a string that is postfixed to a warning about an invalid type.
+	  // For example, "undefined" or "of type array"
+	  function getPostfixForTypeWarning(value) {
+	    var type = getPreciseType(value);
+	    switch (type) {
+	      case 'array':
+	      case 'object':
+	        return 'an ' + type;
+	      case 'boolean':
+	      case 'date':
+	      case 'regexp':
+	        return 'a ' + type;
+	      default:
+	        return type;
+	    }
+	  }
+
+	  // Returns class name of the object, if any.
+	  function getClassName(propValue) {
+	    if (!propValue.constructor || !propValue.constructor.name) {
+	      return ANONYMOUS;
+	    }
+	    return propValue.constructor.name;
+	  }
+
+	  ReactPropTypes.checkPropTypes = checkPropTypes;
+	  ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
+	  ReactPropTypes.PropTypes = ReactPropTypes;
+
+	  return ReactPropTypes;
+	};
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports) {
+
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	'use strict';
+
+	var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+
+	module.exports = ReactPropTypesSecret;
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	'use strict';
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	var printWarning = function printWarning() {};
+
+	if (process.env.NODE_ENV !== 'production') {
+	  var ReactPropTypesSecret = __webpack_require__(65);
+	  var loggedTypeFailures = {};
+	  var has = Function.call.bind(Object.prototype.hasOwnProperty);
+
+	  printWarning = function printWarning(text) {
+	    var message = 'Warning: ' + text;
+	    if (typeof console !== 'undefined') {
+	      console.error(message);
+	    }
+	    try {
+	      // --- Welcome to debugging React ---
+	      // This error was thrown as a convenience so that you can use this stack
+	      // to find the callsite that caused this warning to fire.
+	      throw new Error(message);
+	    } catch (x) {}
+	  };
+	}
+
+	/**
+	 * Assert that the values match with the type specs.
+	 * Error messages are memorized and will only be shown once.
+	 *
+	 * @param {object} typeSpecs Map of name to a ReactPropType
+	 * @param {object} values Runtime values that need to be type-checked
+	 * @param {string} location e.g. "prop", "context", "child context"
+	 * @param {string} componentName Name of the component for error messages.
+	 * @param {?Function} getStack Returns the component stack.
+	 * @private
+	 */
+	function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
+	  if (process.env.NODE_ENV !== 'production') {
+	    for (var typeSpecName in typeSpecs) {
+	      if (has(typeSpecs, typeSpecName)) {
+	        var error;
+	        // Prop type validation may throw. In case they do, we don't want to
+	        // fail the render phase where it didn't fail before. So we log it.
+	        // After these have been cleaned up, we'll let them throw.
+	        try {
+	          // This is intentionally an invariant that gets caught. It's the same
+	          // behavior as without this statement except with a better message.
+	          if (typeof typeSpecs[typeSpecName] !== 'function') {
+	            var err = Error((componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' + 'it must be a function, usually from the `prop-types` package, but received `' + _typeof(typeSpecs[typeSpecName]) + '`.');
+	            err.name = 'Invariant Violation';
+	            throw err;
+	          }
+	          error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
+	        } catch (ex) {
+	          error = ex;
+	        }
+	        if (error && !(error instanceof Error)) {
+	          printWarning((componentName || 'React class') + ': type specification of ' + location + ' `' + typeSpecName + '` is invalid; the type checker ' + 'function must return `null` or an `Error` but returned a ' + (typeof error === 'undefined' ? 'undefined' : _typeof(error)) + '. ' + 'You may have forgotten to pass an argument to the type checker ' + 'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' + 'shape all require an argument).');
+	        }
+	        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
+	          // Only monitor this failure once because there tends to be a lot of the
+	          // same error.
+	          loggedTypeFailures[error.message] = true;
+
+	          var stack = getStack ? getStack() : '';
+
+	          printWarning('Failed ' + location + ' type: ' + error.message + (stack != null ? stack : ''));
+	        }
+	      }
+	    }
+	  }
+	}
+
+	/**
+	 * Resets warning cache when testing.
+	 *
+	 * @private
+	 */
+	checkPropTypes.resetWarningCache = function () {
+	  if (process.env.NODE_ENV !== 'production') {
+	    loggedTypeFailures = {};
+	  }
+	};
+
+	module.exports = checkPropTypes;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 67 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	'use strict';
+
+	var ReactPropTypesSecret = __webpack_require__(65);
+
+	function emptyFunction() {}
+	function emptyFunctionWithReset() {}
+	emptyFunctionWithReset.resetWarningCache = emptyFunction;
+
+	module.exports = function () {
+	  function shim(props, propName, componentName, location, propFullName, secret) {
+	    if (secret === ReactPropTypesSecret) {
+	      // It is still safe when called from React.
+	      return;
+	    }
+	    var err = new Error('Calling PropTypes validators directly is not supported by the `prop-types` package. ' + 'Use PropTypes.checkPropTypes() to call them. ' + 'Read more at http://fb.me/use-check-prop-types');
+	    err.name = 'Invariant Violation';
+	    throw err;
+	  };
+	  shim.isRequired = shim;
+	  function getShim() {
+	    return shim;
+	  };
+	  // Important!
+	  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.
+	  var ReactPropTypes = {
+	    array: shim,
+	    bool: shim,
+	    func: shim,
+	    number: shim,
+	    object: shim,
+	    string: shim,
+	    symbol: shim,
+
+	    any: shim,
+	    arrayOf: getShim,
+	    element: shim,
+	    elementType: shim,
+	    instanceOf: getShim,
+	    node: shim,
+	    objectOf: getShim,
+	    oneOf: getShim,
+	    oneOfType: getShim,
+	    shape: getShim,
+	    exact: getShim,
+
+	    checkPropTypes: emptyFunctionWithReset,
+	    resetWarningCache: emptyFunction
+	  };
+
+	  ReactPropTypes.PropTypes = ReactPropTypes;
+
+	  return ReactPropTypes;
+	};
+
+/***/ }),
+/* 68 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright (c) 2014-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	'use strict';
+
+	/**
+	 * Similar to invariant but only logs a warning if the condition is not met.
+	 * This can be used to log issues in development environments in critical
+	 * paths. Removing the logging code for production environments will keep the
+	 * same logic and follow the same code paths.
+	 */
+
+	var __DEV__ = process.env.NODE_ENV !== 'production';
+
+	var warning = function warning() {};
+
+	if (__DEV__) {
+	  var printWarning = function printWarning(format, args) {
+	    var len = arguments.length;
+	    args = new Array(len > 1 ? len - 1 : 0);
+	    for (var key = 1; key < len; key++) {
+	      args[key - 1] = arguments[key];
+	    }
+	    var argIndex = 0;
+	    var message = 'Warning: ' + format.replace(/%s/g, function () {
+	      return args[argIndex++];
+	    });
+	    if (typeof console !== 'undefined') {
+	      console.error(message);
+	    }
+	    try {
+	      // --- Welcome to debugging React ---
+	      // This error was thrown as a convenience so that you can use this stack
+	      // to find the callsite that caused this warning to fire.
+	      throw new Error(message);
+	    } catch (x) {}
+	  };
+
+	  warning = function warning(condition, format, args) {
+	    var len = arguments.length;
+	    args = new Array(len > 2 ? len - 2 : 0);
+	    for (var key = 2; key < len; key++) {
+	      args[key - 2] = arguments[key];
+	    }
+	    if (format === undefined) {
+	      throw new Error('`warning(condition, format, ...args)` requires a warning ' + 'message argument');
+	    }
+	    if (!condition) {
+	      printWarning.apply(null, [format].concat(args));
+	    }
+	  };
+	}
+
+	module.exports = warning;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 69 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {"use strict";
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	exports.__esModule = true;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _propTypes = __webpack_require__(63);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _warning = __webpack_require__(68);
+
+	var _warning2 = _interopRequireDefault(_warning);
+
+	var _RouterContext = __webpack_require__(70);
+
+	var _RouterContext2 = _interopRequireDefault(_RouterContext);
+
+	var _warnAboutGettingProperty = __webpack_require__(74);
+
+	var _warnAboutGettingProperty2 = _interopRequireDefault(_warnAboutGettingProperty);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	function _classCallCheck(instance, Constructor) {
+	  if (!(instance instanceof Constructor)) {
+	    throw new TypeError("Cannot call a class as a function");
+	  }
+	}
+
+	function _possibleConstructorReturn(self, call) {
+	  if (!self) {
+	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	}
+
+	function _inherits(subClass, superClass) {
+	  if (typeof superClass !== "function" && superClass !== null) {
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	}
+
+	function getContext(props, state) {
+	  return {
+	    history: props.history,
+	    location: state.location,
+	    match: Router.computeRootMatch(state.location.pathname),
+	    staticContext: props.staticContext
+	  };
+	}
+
+	/**
+	 * The public API for putting history on context.
+	 */
+
+	var Router = function (_React$Component) {
+	  _inherits(Router, _React$Component);
+
+	  Router.computeRootMatch = function computeRootMatch(pathname) {
+	    return { path: "/", url: "/", params: {}, isExact: pathname === "/" };
+	  };
+
+	  // TODO: Remove this
+
+
+	  // TODO: Remove this
+	  Router.prototype.getChildContext = function getChildContext() {
+	    var context = getContext(this.props, this.state);
+
+	    if (process.env.NODE_ENV !== "production") {
+	      var contextWithoutWarnings = Object.assign({}, context);
+
+	      Object.keys(context).forEach(function (key) {
+	        (0, _warnAboutGettingProperty2.default)(context, key, "You should not be using this.context.router." + key + " directly. It is private API " + "for internal use only and is subject to change at any time. Instead, use " + "a <Route> or withRouter() to access the current location, match, etc.");
+	      });
+
+	      context._withoutWarnings = contextWithoutWarnings;
+	    }
+
+	    return {
+	      router: context
+	    };
+	  };
+
+	  function Router(props) {
+	    _classCallCheck(this, Router);
+
+	    var _this = _possibleConstructorReturn(this, _React$Component.call(this, props));
+
+	    _this.state = {
+	      location: props.history.location
+	    };
+
+	    _this.unlisten = props.history.listen(function (location) {
+	      _this.setState({ location: location });
+	    });
+	    return _this;
+	  }
+
+	  Router.prototype.componentWillUnmount = function componentWillUnmount() {
+	    this.unlisten();
+	  };
+
+	  Router.prototype.render = function render() {
+	    var context = getContext(this.props, this.state);
+
+	    return _react2.default.createElement(_RouterContext2.default.Provider, {
+	      children: this.props.children || null,
+	      value: context
+	    });
+	  };
+
+	  return Router;
+	}(_react2.default.Component);
+
+	Router.childContextTypes = {
+	  router: _propTypes2.default.object.isRequired
+	};
+
+	if (process.env.NODE_ENV !== "production") {
+	  Router.propTypes = {
+	    children: _propTypes2.default.node,
+	    history: _propTypes2.default.object.isRequired,
+	    staticContext: _propTypes2.default.object
+	  };
+
+	  Router.prototype.componentDidUpdate = function (prevProps) {
+	    process.env.NODE_ENV !== "production" ? (0, _warning2.default)(prevProps.history === this.props.history, "You cannot change <Router history>") : void 0;
+	  };
+	}
+
+	exports.default = Router;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 70 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	exports.__esModule = true;
+
+	var _createReactContext = __webpack_require__(71);
+
+	var _createReactContext2 = _interopRequireDefault(_createReactContext);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	var context = (0, _createReactContext2.default)(); // TODO: Replace with React.createContext once we can assume React 16+
+
+
+	context.Provider.displayName = "Router.Provider";
+	context.Consumer.displayName = "Router.Consumer";
+
+	exports.default = context;
+
+/***/ }),
+/* 71 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _implementation = __webpack_require__(72);
+
+	var _implementation2 = _interopRequireDefault(_implementation);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	exports.default = _react2.default.createContext || _implementation2.default;
+	module.exports = exports['default'];
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	exports.__esModule = true;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _propTypes = __webpack_require__(2);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _gud = __webpack_require__(73);
+
+	var _gud2 = _interopRequireDefault(_gud);
+
+	var _warning = __webpack_require__(7);
+
+	var _warning2 = _interopRequireDefault(_warning);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	function _classCallCheck(instance, Constructor) {
+	  if (!(instance instanceof Constructor)) {
+	    throw new TypeError("Cannot call a class as a function");
+	  }
+	}
+
+	function _possibleConstructorReturn(self, call) {
+	  if (!self) {
+	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	  }return call && ((typeof call === 'undefined' ? 'undefined' : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	}
+
+	function _inherits(subClass, superClass) {
+	  if (typeof superClass !== "function" && superClass !== null) {
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === 'undefined' ? 'undefined' : _typeof(superClass)));
+	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	}
+
+	var MAX_SIGNED_31_BIT_INT = 1073741823;
+
+	// Inlined Object.is polyfill.
+	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+	function objectIs(x, y) {
+	  if (x === y) {
+	    return x !== 0 || 1 / x === 1 / y;
+	  } else {
+	    return x !== x && y !== y;
+	  }
+	}
+
+	function createEventEmitter(value) {
+	  var handlers = [];
+	  return {
+	    on: function on(handler) {
+	      handlers.push(handler);
+	    },
+	    off: function off(handler) {
+	      handlers = handlers.filter(function (h) {
+	        return h !== handler;
+	      });
+	    },
+	    get: function get() {
+	      return value;
+	    },
+	    set: function set(newValue, changedBits) {
+	      value = newValue;
+	      handlers.forEach(function (handler) {
+	        return handler(value, changedBits);
+	      });
+	    }
+	  };
+	}
+
+	function onlyChild(children) {
+	  return Array.isArray(children) ? children[0] : children;
+	}
+
+	function createReactContext(defaultValue, calculateChangedBits) {
+	  var _Provider$childContex, _Consumer$contextType;
+
+	  var contextProp = '__create-react-context-' + (0, _gud2.default)() + '__';
+
+	  var Provider = function (_Component) {
+	    _inherits(Provider, _Component);
+
+	    function Provider() {
+	      var _temp, _this, _ret;
+
+	      _classCallCheck(this, Provider);
+
+	      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	        args[_key] = arguments[_key];
+	      }
+
+	      return _ret = (_temp = (_this = _possibleConstructorReturn(this, _Component.call.apply(_Component, [this].concat(args))), _this), _this.emitter = createEventEmitter(_this.props.value), _temp), _possibleConstructorReturn(_this, _ret);
+	    }
+
+	    Provider.prototype.getChildContext = function getChildContext() {
+	      var _ref;
+
+	      return _ref = {}, _ref[contextProp] = this.emitter, _ref;
+	    };
+
+	    Provider.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+	      if (this.props.value !== nextProps.value) {
+	        var oldValue = this.props.value;
+	        var newValue = nextProps.value;
+	        var changedBits = void 0;
+
+	        if (objectIs(oldValue, newValue)) {
+	          changedBits = 0; // No change
+	        } else {
+	          changedBits = typeof calculateChangedBits === 'function' ? calculateChangedBits(oldValue, newValue) : MAX_SIGNED_31_BIT_INT;
+	          if (process.env.NODE_ENV !== 'production') {
+	            (0, _warning2.default)((changedBits & MAX_SIGNED_31_BIT_INT) === changedBits, 'calculateChangedBits: Expected the return value to be a ' + '31-bit integer. Instead received: %s', changedBits);
+	          }
+
+	          changedBits |= 0;
+
+	          if (changedBits !== 0) {
+	            this.emitter.set(nextProps.value, changedBits);
+	          }
+	        }
+	      }
+	    };
+
+	    Provider.prototype.render = function render() {
+	      return this.props.children;
+	    };
+
+	    return Provider;
+	  }(_react.Component);
+
+	  Provider.childContextTypes = (_Provider$childContex = {}, _Provider$childContex[contextProp] = _propTypes2.default.object.isRequired, _Provider$childContex);
+
+	  var Consumer = function (_Component2) {
+	    _inherits(Consumer, _Component2);
+
+	    function Consumer() {
+	      var _temp2, _this2, _ret2;
+
+	      _classCallCheck(this, Consumer);
+
+	      for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+	        args[_key2] = arguments[_key2];
+	      }
+
+	      return _ret2 = (_temp2 = (_this2 = _possibleConstructorReturn(this, _Component2.call.apply(_Component2, [this].concat(args))), _this2), _this2.state = {
+	        value: _this2.getValue()
+	      }, _this2.onUpdate = function (newValue, changedBits) {
+	        var observedBits = _this2.observedBits | 0;
+	        if ((observedBits & changedBits) !== 0) {
+	          _this2.setState({ value: _this2.getValue() });
+	        }
+	      }, _temp2), _possibleConstructorReturn(_this2, _ret2);
+	    }
+
+	    Consumer.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+	      var observedBits = nextProps.observedBits;
+
+	      this.observedBits = observedBits === undefined || observedBits === null ? MAX_SIGNED_31_BIT_INT // Subscribe to all changes by default
+	      : observedBits;
+	    };
+
+	    Consumer.prototype.componentDidMount = function componentDidMount() {
+	      if (this.context[contextProp]) {
+	        this.context[contextProp].on(this.onUpdate);
+	      }
+	      var observedBits = this.props.observedBits;
+
+	      this.observedBits = observedBits === undefined || observedBits === null ? MAX_SIGNED_31_BIT_INT // Subscribe to all changes by default
+	      : observedBits;
+	    };
+
+	    Consumer.prototype.componentWillUnmount = function componentWillUnmount() {
+	      if (this.context[contextProp]) {
+	        this.context[contextProp].off(this.onUpdate);
+	      }
+	    };
+
+	    Consumer.prototype.getValue = function getValue() {
+	      if (this.context[contextProp]) {
+	        return this.context[contextProp].get();
+	      } else {
+	        return defaultValue;
+	      }
+	    };
+
+	    Consumer.prototype.render = function render() {
+	      return onlyChild(this.props.children)(this.state.value);
+	    };
+
+	    return Consumer;
+	  }(_react.Component);
+
+	  Consumer.contextTypes = (_Consumer$contextType = {}, _Consumer$contextType[contextProp] = _propTypes2.default.object, _Consumer$contextType);
+
+	  return {
+	    Provider: Provider,
+	    Consumer: Consumer
+	  };
+	}
+
+	exports.default = createReactContext;
+	module.exports = exports['default'];
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 73 */
+/***/ (function(module, exports) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
+
+	var key = '__global_unique_id__';
+
+	module.exports = function () {
+	  return global[key] = (global[key] || 0) + 1;
+	};
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ }),
+/* 74 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {"use strict";
+
+	exports.__esModule = true;
+
+	var _warning = __webpack_require__(68);
+
+	var _warning2 = _interopRequireDefault(_warning);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	var warnAboutGettingProperty = function warnAboutGettingProperty() {};
+	if (process.env.NODE_ENV !== "production") {
+	  warnAboutGettingProperty = function warnAboutGettingProperty(object, key, message) {
+	    var didIssueWarning = false;
+
+	    var value = object[key];
+
+	    Object.defineProperty(object, key, {
+	      get: function get() {
+	        if (!didIssueWarning) {
+	          process.env.NODE_ENV !== "production" ? (0, _warning2.default)(false, message) : void 0;
+	          didIssueWarning = true;
+	        }
+
+	        return value;
+	      },
+	      configurable: true
+	    });
+	  };
+	}
+
+	exports.default = warnAboutGettingProperty;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 75 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {"use strict";
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	exports.__esModule = true;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _propTypes = __webpack_require__(63);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _invariant = __webpack_require__(76);
+
+	var _invariant2 = _interopRequireDefault(_invariant);
+
+	var _RouterContext = __webpack_require__(70);
+
+	var _RouterContext2 = _interopRequireDefault(_RouterContext);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	function _classCallCheck(instance, Constructor) {
+	  if (!(instance instanceof Constructor)) {
+	    throw new TypeError("Cannot call a class as a function");
+	  }
+	}
+
+	function _possibleConstructorReturn(self, call) {
+	  if (!self) {
+	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	}
+
+	function _inherits(subClass, superClass) {
+	  if (typeof superClass !== "function" && superClass !== null) {
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	}
+
+	var Block = function (_React$Component) {
+	  _inherits(Block, _React$Component);
+
+	  function Block(props) {
+	    _classCallCheck(this, Block);
+
+	    var _this = _possibleConstructorReturn(this, _React$Component.call(this, props));
+
+	    _this.release = props.method(props.message);
+	    return _this;
+	  }
+
+	  Block.prototype.componentDidUpdate = function componentDidUpdate(prevProps) {
+	    if (prevProps.message !== this.props.message) {
+	      this.release();
+	      this.release = this.props.method(this.props.message);
+	    }
+	  };
+
+	  Block.prototype.componentWillUnmount = function componentWillUnmount() {
+	    this.release();
+	  };
+
+	  Block.prototype.render = function render() {
+	    return null;
+	  };
+
+	  return Block;
+	}(_react2.default.Component);
+
+	if (process.env.NODE_ENV !== "production") {
+	  var messageType = _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]);
+
+	  Block.propTypes = {
+	    method: _propTypes2.default.func.isRequired,
+	    message: messageType.isRequired
+	  };
+	}
+
+	/**
+	 * The public API for prompting the user before navigating away from a screen.
+	 */
+	function Prompt(props) {
+	  return _react2.default.createElement(_RouterContext2.default.Consumer, null, function (context) {
+	    !context ? process.env.NODE_ENV !== "production" ? (0, _invariant2.default)(false, "You should not use <Prompt> outside a <Router>") : (0, _invariant2.default)(false) : void 0;
+
+	    return props.when ? _react2.default.createElement(Block, { method: context.history.block, message: props.message }) : null;
+	  });
+	}
+
+	Prompt.defaultProps = {
+	  when: true
+	};
+
+	if (process.env.NODE_ENV !== "production") {
+	  var _messageType = _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]);
+
+	  Prompt.propTypes = {
+	    when: _propTypes2.default.bool,
+	    message: _messageType.isRequired
+	  };
+	}
+
+	exports.default = Prompt;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 76 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	'use strict';
+
+	/**
+	 * Use invariant() to assert state which your program assumes to be true.
+	 *
+	 * Provide sprintf-style format (only %s is supported) and arguments
+	 * to provide information about what broke and what you were
+	 * expecting.
+	 *
+	 * The invariant message will be stripped in production, but the invariant
+	 * will remain to ensure logic does not differ in production.
+	 */
+
+	var invariant = function invariant(condition, format, a, b, c, d, e, f) {
+	  if (process.env.NODE_ENV !== 'production') {
+	    if (format === undefined) {
+	      throw new Error('invariant requires an error message argument');
+	    }
+	  }
+
+	  if (!condition) {
+	    var error;
+	    if (format === undefined) {
+	      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
+	    } else {
+	      var args = [a, b, c, d, e, f];
+	      var argIndex = 0;
+	      error = new Error(format.replace(/%s/g, function () {
+	        return args[argIndex++];
+	      }));
+	      error.name = 'Invariant Violation';
+	    }
+
+	    error.framesToPop = 1; // we don't care about invariant's own frame
+	    throw error;
+	  }
+	};
+
+	module.exports = invariant;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 77 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {"use strict";
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	exports.__esModule = true;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _propTypes = __webpack_require__(63);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _history = __webpack_require__(40);
+
+	var _invariant = __webpack_require__(76);
+
+	var _invariant2 = _interopRequireDefault(_invariant);
+
+	var _RouterContext = __webpack_require__(70);
+
+	var _RouterContext2 = _interopRequireDefault(_RouterContext);
+
+	var _generatePath = __webpack_require__(78);
+
+	var _generatePath2 = _interopRequireDefault(_generatePath);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	function _classCallCheck(instance, Constructor) {
+	  if (!(instance instanceof Constructor)) {
+	    throw new TypeError("Cannot call a class as a function");
+	  }
+	}
+
+	function _possibleConstructorReturn(self, call) {
+	  if (!self) {
+	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	}
+
+	function _inherits(subClass, superClass) {
+	  if (typeof superClass !== "function" && superClass !== null) {
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	}
+
+	var Navigate = function (_React$Component) {
+	  _inherits(Navigate, _React$Component);
+
+	  function Navigate(props) {
+	    _classCallCheck(this, Navigate);
+
+	    var _this = _possibleConstructorReturn(this, _React$Component.call(this, props));
+
+	    props.method(props.to);
+	    return _this;
+	  }
+
+	  Navigate.prototype.componentDidUpdate = function componentDidUpdate(prevProps) {
+	    if (!(0, _history.locationsAreEqual)(prevProps.to, this.props.to)) {
+	      this.props.method(this.props.to);
+	    }
+	  };
+
+	  Navigate.prototype.render = function render() {
+	    return null;
+	  };
+
+	  return Navigate;
+	}(_react2.default.Component);
+
+	if (process.env.NODE_ENV !== "production") {
+	  var locationType = _propTypes2.default.shape({
+	    pathname: _propTypes2.default.string.isRequired,
+	    search: _propTypes2.default.string.isRequired,
+	    hash: _propTypes2.default.string.isRequired
+	  });
+
+	  Navigate.propTypes = {
+	    method: _propTypes2.default.func.isRequired,
+	    to: locationType.isRequired
+	  };
+	}
+
+	/**
+	 * The public API for navigating programmatically with a component.
+	 */
+	function Redirect(props) {
+	  return _react2.default.createElement(_RouterContext2.default.Consumer, null, function (context) {
+	    !context ? process.env.NODE_ENV !== "production" ? (0, _invariant2.default)(false, "You should not use <Redirect> outside a <Router>") : (0, _invariant2.default)(false) : void 0;
+
+	    var method = props.push ? context.history.push : context.history.replace;
+	    var to = (0, _history.createLocation)(props.computedMatch ? typeof props.to === "string" ? (0, _generatePath2.default)(props.to, props.computedMatch.params) : Object.assign({}, props.to, {
+	      pathname: (0, _generatePath2.default)(props.to.pathname, props.computedMatch.params)
+	    }) : props.to);
+
+	    return _react2.default.createElement(Navigate, { method: method, to: to });
+	  });
+	}
+
+	Redirect.defaultProps = {
+	  push: false
+	};
+
+	if (process.env.NODE_ENV !== "production") {
+	  Redirect.propTypes = {
+	    push: _propTypes2.default.bool,
+	    from: _propTypes2.default.string,
+	    to: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object]).isRequired
+	  };
+	}
+
+	exports.default = Redirect;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 78 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	exports.__esModule = true;
+
+	var _pathToRegexp = __webpack_require__(46);
+
+	var _pathToRegexp2 = _interopRequireDefault(_pathToRegexp);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	var cache = {};
+	var cacheLimit = 10000;
+	var cacheCount = 0;
+
+	function compilePath(path) {
+	  if (cache[path]) return cache[path];
+
+	  var generator = _pathToRegexp2.default.compile(path);
+
+	  if (cacheCount < cacheLimit) {
+	    cache[path] = generator;
+	    cacheCount++;
+	  }
+
+	  return generator;
+	}
+
+	/**
+	 * Public API for generating a URL pathname from a path and parameters.
+	 */
+	function generatePath() {
+	  var path = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "/";
+	  var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+	  return path === "/" ? path : compilePath(path)(params, { pretty: true });
+	}
+
+	exports.default = generatePath;
+
+/***/ }),
+/* 79 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {"use strict";
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	exports.__esModule = true;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _propTypes = __webpack_require__(63);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _invariant = __webpack_require__(76);
+
+	var _invariant2 = _interopRequireDefault(_invariant);
+
+	var _warning = __webpack_require__(68);
+
+	var _warning2 = _interopRequireDefault(_warning);
+
+	var _RouterContext = __webpack_require__(70);
+
+	var _RouterContext2 = _interopRequireDefault(_RouterContext);
+
+	var _matchPath = __webpack_require__(80);
+
+	var _matchPath2 = _interopRequireDefault(_matchPath);
+
+	var _warnAboutGettingProperty = __webpack_require__(74);
+
+	var _warnAboutGettingProperty2 = _interopRequireDefault(_warnAboutGettingProperty);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	function _classCallCheck(instance, Constructor) {
+	  if (!(instance instanceof Constructor)) {
+	    throw new TypeError("Cannot call a class as a function");
+	  }
+	}
+
+	function _possibleConstructorReturn(self, call) {
+	  if (!self) {
+	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	}
+
+	function _inherits(subClass, superClass) {
+	  if (typeof superClass !== "function" && superClass !== null) {
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	}
+
+	function isEmptyChildren(children) {
+	  return _react2.default.Children.count(children) === 0;
+	}
+
+	function getContext(props, context) {
+	  var location = props.location || context.location;
+	  var match = props.computedMatch ? props.computedMatch // <Switch> already computed the match for us
+	  : props.path ? (0, _matchPath2.default)(location.pathname, props) : context.match;
+
+	  return Object.assign({}, context, { location: location, match: match });
+	}
+
+	/**
+	 * The public API for matching a single path and rendering.
+	 */
+
+	var Route = function (_React$Component) {
+	  _inherits(Route, _React$Component);
+
+	  function Route() {
+	    _classCallCheck(this, Route);
+
+	    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+	  }
+
+	  // TODO: Remove this
+
+	  // TODO: Remove this
+	  Route.prototype.getChildContext = function getChildContext() {
+	    !this.context.router ? process.env.NODE_ENV !== "production" ? (0, _invariant2.default)(false, "You should not use <Route> outside a <Router>") : (0, _invariant2.default)(false) : void 0;
+
+	    var parentContext = this.context.router;
+	    if (process.env.NODE_ENV !== "production") {
+	      parentContext = parentContext._withoutWarnings;
+	    }
+
+	    var context = getContext(this.props, parentContext);
+	    if (process.env.NODE_ENV !== "production") {
+	      var contextWithoutWarnings = Object.assign({}, context);
+
+	      Object.keys(context).forEach(function (key) {
+	        (0, _warnAboutGettingProperty2.default)(context, key, "You should not be using this.context.router." + key + " directly. It is private API " + "for internal use only and is subject to change at any time. Instead, use " + "a <Route> or withRouter() to access the current location, match, etc.");
+	      });
+
+	      context._withoutWarnings = contextWithoutWarnings;
+	    }
+
+	    return {
+	      router: context
+	    };
+	  };
+
+	  // TODO: Remove this
+
+
+	  Route.prototype.render = function render() {
+	    var _this2 = this;
+
+	    return _react2.default.createElement(_RouterContext2.default.Consumer, null, function (context) {
+	      !context ? process.env.NODE_ENV !== "production" ? (0, _invariant2.default)(false, "You should not use <Route> outside a <Router>") : (0, _invariant2.default)(false) : void 0;
+
+	      var props = getContext(_this2.props, context);
+
+	      var _props = _this2.props,
+	          children = _props.children,
+	          component = _props.component,
+	          render = _props.render;
+
+	      // Preact uses an empty array as children by
+	      // default, so use null if that's the case.
+
+	      if (Array.isArray(children) && children.length === 0) {
+	        children = null;
+	      }
+
+	      if (typeof children === "function") {
+	        children = children(props);
+
+	        if (children === undefined) {
+	          if (process.env.NODE_ENV !== "production") {
+	            var path = _this2.props.path;
+
+	            process.env.NODE_ENV !== "production" ? (0, _warning2.default)(false, "You returned `undefined` from the `children` function of " + ("<Route" + (path ? " path=\"" + path + "\"" : "") + ">, but you ") + "should have returned a React element or `null`") : void 0;
+	          }
+
+	          children = null;
+	        }
+	      }
+
+	      return _react2.default.createElement(_RouterContext2.default.Provider, { value: props }, children && !isEmptyChildren(children) ? children : props.match ? component ? _react2.default.createElement(component, props) : render ? render(props) : null : null);
+	    });
+	  };
+
+	  return Route;
+	}(_react2.default.Component);
+
+	Route.contextTypes = {
+	  router: _propTypes2.default.object.isRequired
+	};
+	Route.childContextTypes = {
+	  router: _propTypes2.default.object.isRequired
+	};
+
+	if (process.env.NODE_ENV !== "production") {
+	  Route.propTypes = {
+	    children: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.node]),
+	    component: _propTypes2.default.func,
+	    exact: _propTypes2.default.bool,
+	    location: _propTypes2.default.object,
+	    path: _propTypes2.default.string,
+	    render: _propTypes2.default.func,
+	    sensitive: _propTypes2.default.bool,
+	    strict: _propTypes2.default.bool
+	  };
+
+	  Route.prototype.componentDidMount = function () {
+	    process.env.NODE_ENV !== "production" ? (0, _warning2.default)(!(this.props.children && !isEmptyChildren(this.props.children) && this.props.component), "You should not use <Route component> and <Route children> in the same route; <Route component> will be ignored") : void 0;
+
+	    process.env.NODE_ENV !== "production" ? (0, _warning2.default)(!(this.props.children && !isEmptyChildren(this.props.children) && this.props.render), "You should not use <Route render> and <Route children> in the same route; <Route render> will be ignored") : void 0;
+
+	    process.env.NODE_ENV !== "production" ? (0, _warning2.default)(!(this.props.component && this.props.render), "You should not use <Route component> and <Route render> in the same route; <Route render> will be ignored") : void 0;
+	  };
+
+	  Route.prototype.componentDidUpdate = function (prevProps) {
+	    process.env.NODE_ENV !== "production" ? (0, _warning2.default)(!(this.props.location && !prevProps.location), '<Route> elements should not change from uncontrolled to controlled (or vice versa). You initially used no "location" prop and then provided one on a subsequent render.') : void 0;
+
+	    process.env.NODE_ENV !== "production" ? (0, _warning2.default)(!(!this.props.location && prevProps.location), '<Route> elements should not change from controlled to uncontrolled (or vice versa). You provided a "location" prop initially but omitted it on a subsequent render.') : void 0;
+	  };
+	}
+
+	exports.default = Route;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 80 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	exports.__esModule = true;
+
+	var _pathToRegexp = __webpack_require__(46);
+
+	var _pathToRegexp2 = _interopRequireDefault(_pathToRegexp);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	var cache = {};
+	var cacheLimit = 10000;
+	var cacheCount = 0;
+
+	function compilePath(path, options) {
+	  var cacheKey = "" + options.end + options.strict + options.sensitive;
+	  var pathCache = cache[cacheKey] || (cache[cacheKey] = {});
+
+	  if (pathCache[path]) return pathCache[path];
+
+	  var keys = [];
+	  var regexp = (0, _pathToRegexp2.default)(path, keys, options);
+	  var result = { regexp: regexp, keys: keys };
+
+	  if (cacheCount < cacheLimit) {
+	    pathCache[path] = result;
+	    cacheCount++;
+	  }
+
+	  return result;
+	}
+
+	/**
+	 * Public API for matching a URL pathname to a path.
+	 */
+	function matchPath(pathname) {
+	  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+	  if (typeof options === "string") options = { path: options };
+
+	  var _options = options,
+	      path = _options.path,
+	      _options$exact = _options.exact,
+	      exact = _options$exact === undefined ? false : _options$exact,
+	      _options$strict = _options.strict,
+	      strict = _options$strict === undefined ? false : _options$strict,
+	      _options$sensitive = _options.sensitive,
+	      sensitive = _options$sensitive === undefined ? false : _options$sensitive;
+
+	  var _compilePath = compilePath(path, { end: exact, strict: strict, sensitive: sensitive }),
+	      regexp = _compilePath.regexp,
+	      keys = _compilePath.keys;
+
+	  var match = regexp.exec(pathname);
+
+	  if (!match) return null;
+
+	  var url = match[0],
+	      values = match.slice(1);
+
+	  var isExact = pathname === url;
+
+	  if (exact && !isExact) return null;
+
+	  return {
+	    path: path, // the path used to match
+	    url: path === "/" && url === "" ? "/" : url, // the matched portion of the URL
+	    isExact: isExact, // whether or not we matched exactly
+	    params: keys.reduce(function (memo, key, index) {
+	      memo[key.name] = values[index];
+	      return memo;
+	    }, {})
+	  };
+	}
+
+	exports.default = matchPath;
+
+/***/ }),
+/* 81 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {"use strict";
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	exports.__esModule = true;
+
+	var _extends = Object.assign || function (target) {
+	  for (var i = 1; i < arguments.length; i++) {
+	    var source = arguments[i];for (var key in source) {
+	      if (Object.prototype.hasOwnProperty.call(source, key)) {
+	        target[key] = source[key];
+	      }
+	    }
+	  }return target;
+	};
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _propTypes = __webpack_require__(63);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _history = __webpack_require__(40);
+
+	var _invariant = __webpack_require__(76);
+
+	var _invariant2 = _interopRequireDefault(_invariant);
+
+	var _warning = __webpack_require__(68);
+
+	var _warning2 = _interopRequireDefault(_warning);
+
+	var _Router = __webpack_require__(69);
+
+	var _Router2 = _interopRequireDefault(_Router);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	function _objectWithoutProperties(obj, keys) {
+	  var target = {};for (var i in obj) {
+	    if (keys.indexOf(i) >= 0) continue;if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;target[i] = obj[i];
+	  }return target;
+	}
+
+	function _classCallCheck(instance, Constructor) {
+	  if (!(instance instanceof Constructor)) {
+	    throw new TypeError("Cannot call a class as a function");
+	  }
+	}
+
+	function _possibleConstructorReturn(self, call) {
+	  if (!self) {
+	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	}
+
+	function _inherits(subClass, superClass) {
+	  if (typeof superClass !== "function" && superClass !== null) {
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	}
+
+	function addLeadingSlash(path) {
+	  return path.charAt(0) === "/" ? path : "/" + path;
+	}
+
+	function addBasename(basename, location) {
+	  if (!basename) return location;
+
+	  return Object.assign({}, location, {
+	    pathname: addLeadingSlash(basename) + location.pathname
+	  });
+	}
+
+	function stripBasename(basename, location) {
+	  if (!basename) return location;
+
+	  var base = addLeadingSlash(basename);
+
+	  if (location.pathname.indexOf(base) !== 0) return location;
+
+	  return Object.assign({}, location, {
+	    pathname: location.pathname.substr(base.length)
+	  });
+	}
+
+	function createURL(location) {
+	  return typeof location === "string" ? location : (0, _history.createPath)(location);
+	}
+
+	function staticHandler(methodName) {
+	  return function () {
+	     true ? process.env.NODE_ENV !== "production" ? (0, _invariant2.default)(false, "You cannot %s with <StaticRouter>", methodName) : (0, _invariant2.default)(false) : void 0;
+	  };
+	}
+
+	function noop() {}
+
+	/**
+	 * The public top-level API for a "static" <Router>, so-called because it
+	 * can't actually change the current location. Instead, it just records
+	 * location changes in a context object. Useful mainly in testing and
+	 * server-rendering scenarios.
+	 */
+
+	var StaticRouter = function (_React$Component) {
+	  _inherits(StaticRouter, _React$Component);
+
+	  function StaticRouter() {
+	    var _temp, _this, _ret;
+
+	    _classCallCheck(this, StaticRouter);
+
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+
+	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.createHref = function (path) {
+	      return addLeadingSlash(_this.props.basename + createURL(path));
+	    }, _this.handlePush = function (location) {
+	      var _this$props = _this.props,
+	          basename = _this$props.basename,
+	          context = _this$props.context;
+
+	      context.action = "PUSH";
+	      context.location = addBasename(basename, (0, _history.createLocation)(location));
+	      context.url = createURL(context.location);
+	    }, _this.handleReplace = function (location) {
+	      var _this$props2 = _this.props,
+	          basename = _this$props2.basename,
+	          context = _this$props2.context;
+
+	      context.action = "REPLACE";
+	      context.location = addBasename(basename, (0, _history.createLocation)(location));
+	      context.url = createURL(context.location);
+	    }, _this.handleListen = function () {
+	      return noop;
+	    }, _this.handleBlock = function () {
+	      return noop;
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }
+
+	  StaticRouter.prototype.render = function render() {
+	    var _props = this.props,
+	        basename = _props.basename,
+	        context = _props.context,
+	        location = _props.location,
+	        props = _objectWithoutProperties(_props, ["basename", "context", "location"]);
+
+	    var history = {
+	      createHref: this.createHref,
+	      action: "POP",
+	      location: stripBasename(basename, (0, _history.createLocation)(location)),
+	      push: this.handlePush,
+	      replace: this.handleReplace,
+	      go: staticHandler("go"),
+	      goBack: staticHandler("goBack"),
+	      goForward: staticHandler("goForward"),
+	      listen: this.handleListen,
+	      block: this.handleBlock
+	    };
+
+	    return _react2.default.createElement(_Router2.default, _extends({}, props, {
+	      history: history,
+	      staticContext: this.props.context || {}
+	    }));
+	  };
+
+	  return StaticRouter;
+	}(_react2.default.Component);
+
+	StaticRouter.defaultProps = {
+	  basename: "",
+	  location: "/"
+	};
+
+	if (process.env.NODE_ENV !== "production") {
+	  StaticRouter.propTypes = {
+	    basename: _propTypes2.default.string,
+	    context: _propTypes2.default.object.isRequired,
+	    location: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object])
+	  };
+
+	  StaticRouter.prototype.componentDidMount = function () {
+	    process.env.NODE_ENV !== "production" ? (0, _warning2.default)(!this.props.history, "<StaticRouter> ignores the history prop. To use a custom history, " + "use `import { Router }` instead of `import { StaticRouter as Router }`.") : void 0;
+	  };
+	}
+
+	exports.default = StaticRouter;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 82 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {"use strict";
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	exports.__esModule = true;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _propTypes = __webpack_require__(63);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _invariant = __webpack_require__(76);
+
+	var _invariant2 = _interopRequireDefault(_invariant);
+
+	var _warning = __webpack_require__(68);
+
+	var _warning2 = _interopRequireDefault(_warning);
+
+	var _RouterContext = __webpack_require__(70);
+
+	var _RouterContext2 = _interopRequireDefault(_RouterContext);
+
+	var _matchPath = __webpack_require__(80);
+
+	var _matchPath2 = _interopRequireDefault(_matchPath);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	function _classCallCheck(instance, Constructor) {
+	  if (!(instance instanceof Constructor)) {
+	    throw new TypeError("Cannot call a class as a function");
+	  }
+	}
+
+	function _possibleConstructorReturn(self, call) {
+	  if (!self) {
+	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	}
+
+	function _inherits(subClass, superClass) {
+	  if (typeof superClass !== "function" && superClass !== null) {
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	}
+
+	/**
+	 * The public API for rendering the first <Route> that matches.
+	 */
+	var Switch = function (_React$Component) {
+	  _inherits(Switch, _React$Component);
+
+	  function Switch() {
+	    _classCallCheck(this, Switch);
+
+	    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+	  }
+
+	  Switch.prototype.render = function render() {
+	    var _this2 = this;
+
+	    return _react2.default.createElement(_RouterContext2.default.Consumer, null, function (context) {
+	      !context ? process.env.NODE_ENV !== "production" ? (0, _invariant2.default)(false, "You should not use <Switch> outside a <Router>") : (0, _invariant2.default)(false) : void 0;
+
+	      var location = _this2.props.location || context.location;
+
+	      var element = void 0,
+	          match = void 0;
+
+	      // We use React.Children.forEach instead of React.Children.toArray().find()
+	      // here because toArray adds keys to all child elements and we do not want
+	      // to trigger an unmount/remount for two <Route>s that render the same
+	      // component at different URLs.
+	      _react2.default.Children.forEach(_this2.props.children, function (child) {
+	        if (match == null && _react2.default.isValidElement(child)) {
+	          element = child;
+
+	          var path = child.props.path || child.props.from;
+
+	          match = path ? (0, _matchPath2.default)(location.pathname, Object.assign({}, child.props, { path: path })) : context.match;
+	        }
+	      });
+
+	      return match ? _react2.default.cloneElement(element, { location: location, computedMatch: match }) : null;
+	    });
+	  };
+
+	  return Switch;
+	}(_react2.default.Component);
+
+	if (process.env.NODE_ENV !== "production") {
+	  Switch.propTypes = {
+	    children: _propTypes2.default.node,
+	    location: _propTypes2.default.object
+	  };
+
+	  Switch.prototype.componentDidUpdate = function (prevProps) {
+	    process.env.NODE_ENV !== "production" ? (0, _warning2.default)(!(this.props.location && !prevProps.location), '<Switch> elements should not change from uncontrolled to controlled (or vice versa). You initially used no "location" prop and then provided one on a subsequent render.') : void 0;
+
+	    process.env.NODE_ENV !== "production" ? (0, _warning2.default)(!(!this.props.location && prevProps.location), '<Switch> elements should not change from controlled to uncontrolled (or vice versa). You provided a "location" prop initially but omitted it on a subsequent render.') : void 0;
+	  };
+	}
+
+	exports.default = Switch;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 83 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {"use strict";
+
+	exports.__esModule = true;
+
+	var _extends = Object.assign || function (target) {
+	  for (var i = 1; i < arguments.length; i++) {
+	    var source = arguments[i];for (var key in source) {
+	      if (Object.prototype.hasOwnProperty.call(source, key)) {
+	        target[key] = source[key];
+	      }
+	    }
+	  }return target;
+	};
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _propTypes = __webpack_require__(63);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _hoistNonReactStatics = __webpack_require__(84);
+
+	var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
+
+	var _Route = __webpack_require__(79);
+
+	var _Route2 = _interopRequireDefault(_Route);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	function _objectWithoutProperties(obj, keys) {
+	  var target = {};for (var i in obj) {
+	    if (keys.indexOf(i) >= 0) continue;if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;target[i] = obj[i];
+	  }return target;
+	}
+
+	/**
+	 * A public higher-order component to access the imperative API
+	 */
+	function withRouter(Component) {
+	  var C = function C(props) {
+	    var wrappedComponentRef = props.wrappedComponentRef,
+	        remainingProps = _objectWithoutProperties(props, ["wrappedComponentRef"]);
+
+	    return _react2.default.createElement(_Route2.default, {
+	      children: function children(routeComponentProps) {
+	        return _react2.default.createElement(Component, _extends({}, remainingProps, routeComponentProps, {
+	          ref: wrappedComponentRef
+	        }));
+	      }
+	    });
+	  };
+
+	  C.displayName = "withRouter(" + (Component.displayName || Component.name) + ")";
+	  C.WrappedComponent = Component;
+
+	  if (process.env.NODE_ENV !== "production") {
+	    C.propTypes = {
+	      wrappedComponentRef: _propTypes2.default.func
+	    };
+	  }
+
+	  return (0, _hoistNonReactStatics2.default)(C, Component);
+	}
+
+	exports.default = withRouter;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 84 */
+/***/ (function(module, exports) {
+
+	'use strict';
+
+	/**
+	 * Copyright 2015, Yahoo! Inc.
+	 * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
+	 */
+
+	var REACT_STATICS = {
+	    childContextTypes: true,
+	    contextTypes: true,
+	    defaultProps: true,
+	    displayName: true,
+	    getDefaultProps: true,
+	    getDerivedStateFromProps: true,
+	    mixins: true,
+	    propTypes: true,
+	    type: true
+	};
+
+	var KNOWN_STATICS = {
+	    name: true,
+	    length: true,
+	    prototype: true,
+	    caller: true,
+	    callee: true,
+	    arguments: true,
+	    arity: true
+	};
+
+	var defineProperty = Object.defineProperty;
+	var getOwnPropertyNames = Object.getOwnPropertyNames;
+	var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+	var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+	var getPrototypeOf = Object.getPrototypeOf;
+	var objectPrototype = getPrototypeOf && getPrototypeOf(Object);
+
+	function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
+	    if (typeof sourceComponent !== 'string') {
+	        // don't hoist over string (html) components
+
+	        if (objectPrototype) {
+	            var inheritedComponent = getPrototypeOf(sourceComponent);
+	            if (inheritedComponent && inheritedComponent !== objectPrototype) {
+	                hoistNonReactStatics(targetComponent, inheritedComponent, blacklist);
+	            }
+	        }
+
+	        var keys = getOwnPropertyNames(sourceComponent);
+
+	        if (getOwnPropertySymbols) {
+	            keys = keys.concat(getOwnPropertySymbols(sourceComponent));
+	        }
+
+	        for (var i = 0; i < keys.length; ++i) {
+	            var key = keys[i];
+	            if (!REACT_STATICS[key] && !KNOWN_STATICS[key] && (!blacklist || !blacklist[key])) {
+	                var descriptor = getOwnPropertyDescriptor(sourceComponent, key);
+	                try {
+	                    // Avoid failures from read-only properties
+	                    defineProperty(targetComponent, key, descriptor);
+	                } catch (e) {}
+	            }
+	        }
+
+	        return targetComponent;
+	    }
+
+	    return targetComponent;
+	}
+
+	module.exports = hoistNonReactStatics;
+
+/***/ }),
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;'use strict';
@@ -5242,7 +9025,7 @@ return /******/ (function(modules) { // webpackBootstrap
 		if (typeof module !== 'undefined' && module.exports) {
 			classNames.default = classNames;
 			module.exports = classNames;
-		} else if ("function" === 'function' && _typeof(__webpack_require__(52)) === 'object' && __webpack_require__(52)) {
+		} else if ("function" === 'function' && _typeof(__webpack_require__(86)) === 'object' && __webpack_require__(86)) {
 			// register as 'classnames', consistent with npm package name
 			!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
 				return classNames;
@@ -5253,7 +9036,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	})();
 
 /***/ }),
-/* 52 */
+/* 86 */
 /***/ (function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {module.exports = __webpack_amd_options__;
