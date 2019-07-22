@@ -106,7 +106,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      if (this.to[0] !== '/') this.to = '/' + this.to;
 
 	      this.props.history.listen(this.onLocationChange.bind(this));
-	      this.onLocationChange(this.context.router.route);
+	      this.onLocationChange(this.props.location);
 	    }
 	  }, {
 	    key: 'onLocationChange',
@@ -166,6 +166,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  toggleSubMenu: _propTypes2.default.func,
 	  activateMe: _propTypes2.default.func.isRequired,
 	  children: _propTypes2.default.oneOfType([_propTypes2.default.element, _propTypes2.default.array]).isRequired,
+	  location: _propTypes2.default.object.isRequired,
 	  history: _propTypes2.default.object.isRequired
 	};
 

@@ -16,7 +16,7 @@ class RouterLink extends React.Component {
     if (this.to[0] !== '/') this.to = `/${this.to}`;
 
     this.props.history.listen(this.onLocationChange.bind(this));
-    this.onLocationChange(this.context.router.route);
+    this.onLocationChange(this.props.location);
   }
   onLocationChange(e) {
     if ((e.pathname || '/') === this.to) {
@@ -82,6 +82,7 @@ RouterLink.propTypes = {
     PropTypes.element,
     PropTypes.array,
   ]).isRequired,
+  location: PropTypes.object.isRequired,
   history: PropTypes.object.isRequired
 };
 
