@@ -7,6 +7,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router';
 import classnames from 'classnames';
 
 class RouterLink extends React.Component {
@@ -14,7 +15,7 @@ class RouterLink extends React.Component {
     this.to = this.props.to;
     if (this.to[0] !== '/') this.to = `/${this.to}`;
 
-    this.context.router.history.listen(this.onLocationChange.bind(this));
+    this.props.history.listen(this.onLocationChange.bind(this));
     this.onLocationChange(this.context.router.route);
   }
   onLocationChange(e) {
@@ -81,10 +82,7 @@ RouterLink.propTypes = {
     PropTypes.element,
     PropTypes.array,
   ]).isRequired,
+  history: PropTypes.object.isRequired
 };
 
-RouterLink.contextTypes = {
-  router: PropTypes.object.isRequired,
-};
-
-export default RouterLink;
+export default withRouter(RouterLink);
