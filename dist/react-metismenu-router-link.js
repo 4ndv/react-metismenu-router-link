@@ -72,7 +72,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _reactRouterDom = __webpack_require__(12);
 
-	var _classnames = __webpack_require__(50);
+	var _reactRouter = __webpack_require__(50);
+
+	var _classnames = __webpack_require__(51);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -103,7 +105,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      this.to = this.props.to;
 	      if (this.to[0] !== '/') this.to = '/' + this.to;
 
-	      this.context.router.history.listen(this.onLocationChange.bind(this));
+	      this.props.history.listen(this.onLocationChange.bind(this));
 	      this.onLocationChange(this.context.router.route);
 	    }
 	  }, {
@@ -163,14 +165,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	  hasSubMenu: _propTypes2.default.bool.isRequired,
 	  toggleSubMenu: _propTypes2.default.func,
 	  activateMe: _propTypes2.default.func.isRequired,
-	  children: _propTypes2.default.oneOfType([_propTypes2.default.element, _propTypes2.default.array]).isRequired
+	  children: _propTypes2.default.oneOfType([_propTypes2.default.element, _propTypes2.default.array]).isRequired,
+	  history: _propTypes2.default.object.isRequired
 	};
 
-	RouterLink.contextTypes = {
-	  router: _propTypes2.default.object.isRequired
-	};
-
-	exports.default = RouterLink;
+	exports.default = (0, _reactRouter.withRouter)(RouterLink);
 
 /***/ }),
 /* 1 */
@@ -5136,12 +5135,71 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	'use strict';
+
+	exports.__esModule = true;
+	exports.withRouter = exports.matchPath = exports.Switch = exports.StaticRouter = exports.Router = exports.Route = exports.Redirect = exports.Prompt = exports.MemoryRouter = undefined;
+
+	var _MemoryRouter2 = __webpack_require__(29);
+
+	var _MemoryRouter3 = _interopRequireDefault(_MemoryRouter2);
+
+	var _Prompt2 = __webpack_require__(38);
+
+	var _Prompt3 = _interopRequireDefault(_Prompt2);
+
+	var _Redirect2 = __webpack_require__(40);
+
+	var _Redirect3 = _interopRequireDefault(_Redirect2);
+
+	var _Route2 = __webpack_require__(33);
+
+	var _Route3 = _interopRequireDefault(_Route2);
+
+	var _Router2 = __webpack_require__(24);
+
+	var _Router3 = _interopRequireDefault(_Router2);
+
+	var _StaticRouter2 = __webpack_require__(43);
+
+	var _StaticRouter3 = _interopRequireDefault(_StaticRouter2);
+
+	var _Switch2 = __webpack_require__(45);
+
+	var _Switch3 = _interopRequireDefault(_Switch2);
+
+	var _matchPath2 = __webpack_require__(34);
+
+	var _matchPath3 = _interopRequireDefault(_matchPath2);
+
+	var _withRouter2 = __webpack_require__(48);
+
+	var _withRouter3 = _interopRequireDefault(_withRouter2);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	exports.MemoryRouter = _MemoryRouter3.default;
+	exports.Prompt = _Prompt3.default;
+	exports.Redirect = _Redirect3.default;
+	exports.Route = _Route3.default;
+	exports.Router = _Router3.default;
+	exports.StaticRouter = _StaticRouter3.default;
+	exports.Switch = _Switch3.default;
+	exports.matchPath = _matchPath3.default;
+	exports.withRouter = _withRouter3.default;
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;'use strict';
 
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 	/*!
-	  Copyright (c) 2016 Jed Watson.
+	  Copyright (c) 2017 Jed Watson.
 	  Licensed under the MIT License (MIT), see
 	  http://jedwatson.github.io/classnames
 	*/
@@ -5163,8 +5221,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 				if (argType === 'string' || argType === 'number') {
 					classes.push(arg);
-				} else if (Array.isArray(arg)) {
-					classes.push(classNames.apply(null, arg));
+				} else if (Array.isArray(arg) && arg.length) {
+					var inner = classNames.apply(null, arg);
+					if (inner) {
+						classes.push(inner);
+					}
 				} else if (argType === 'object') {
 					for (var key in arg) {
 						if (hasOwn.call(arg, key) && arg[key]) {
@@ -5178,8 +5239,9 @@ return /******/ (function(modules) { // webpackBootstrap
 		}
 
 		if (typeof module !== 'undefined' && module.exports) {
+			classNames.default = classNames;
 			module.exports = classNames;
-		} else if ("function" === 'function' && _typeof(__webpack_require__(51)) === 'object' && __webpack_require__(51)) {
+		} else if ("function" === 'function' && _typeof(__webpack_require__(52)) === 'object' && __webpack_require__(52)) {
 			// register as 'classnames', consistent with npm package name
 			!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
 				return classNames;
@@ -5190,7 +5252,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	})();
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {module.exports = __webpack_amd_options__;
